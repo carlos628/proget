@@ -1,21 +1,16 @@
-<?php ?>
 
 
 <html>
+<head>
+<title> Cadastro de Usuário </title>
+</head>
+<body>
+<form method="POST" action="cadastro.php">
+<label>Login:</label><input type="text" name="login" id="login"><br>
+<label>Senha:</label><input type="password" name="senha" id="senha"><br>
+<input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar">
+</form>
+</body>
+</html>
 
-    <title>camisetaria</title>
 
-    <head>
-
-
-
-
-    </head>
-    <body>
-<div class="col-md-5">
-                    <form class="form-inline campo_busca">
-                        <div class="form-group">
-                            <label class="control-label">Buscar</label>
-                            <input type="text" class="form-control" placeholder="Digite uma busca">
-                        </div>
-    </body>
