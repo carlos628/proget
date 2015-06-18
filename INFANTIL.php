@@ -1,4 +1,4 @@
-<?php $pagina = 'home'; ?>
+<?php $pagina = 'infantil'; ?>
 <!jonas lindo>
 <html lang="en">
     <head>

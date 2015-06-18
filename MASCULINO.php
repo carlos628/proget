@@ -1,4 +1,4 @@
-<?php $pagina = 'home'; ?>
+<?php $pagina = 'masculino'; ?>
 <!jonas lindo>
 <html lang="en">
     <head>
