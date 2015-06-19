@@ -1,3 +1,5 @@
+
+<?php include('navbar.php'); ?>
 <html class="no-js"> <!--<![endif]-->
     <head id="ctl00_HEAD1">
         <meta charset="utf-8">

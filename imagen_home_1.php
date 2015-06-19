@@ -1,4 +1,6 @@
-<html class="no-js"> <!--<![endif]-->
+
+
+<!--<html class="no-js"> <![endif]-->
     <head id="ctl00_HEAD1">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" Content="IE=edge,chrome=1">
@@ -12,7 +14,7 @@
         <link rel="stylesheet" href="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Content/css/main.css">
         <LINK href="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Content/css/hack/dsgecko.css" type="text/css" rel="stylesheet" />
 
-
+       
 
         <link rel="stylesheet" href="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Content/css/catalogo.css">
         <script type="text/javascript" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Scripts/bootstrap/jquery.min.js">
@@ -28,17 +30,26 @@
         </script>
         <script type="text/javascript" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Scripts/select/jquery.custom.selectBoxIt.js">
         </script>
-        <meta name="keywords" content="camiseta, camisetas, camisetas modernas, camisetas hypadas, camisetas banda, camisetas rock, camiseteria, tshirt, t-shirt, camisetas bacanas, estampas bacanas, estampa, estampas, design, concurso, designers, arte, camisa, moda, fashion, hype, hypado, hypada, hypadinha, art, competição, vote, nota, prêmio, cor, cores, estilo, original, presente, tees, t-shirts, t shirt, t shirts, roupa, roupas" />
-        <meta name="description" content="Camisetas com estampas exclusivas criadas por novos designers e escolhidas por voc&amp;ecirc;." />
-        <meta name="author" content="Camiseteria.com" />
-        <meta property="og:title" content="Camiseteria.com - Camisetas estampadas" />
-        <!--<meta property="og:url" content="http://www.camiseteria.com" />-->
-        <meta property="og:image" content="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/images/opengraph/default.jpg" />
-        <meta property="og:site" content="Camiseteria.com" />
-        <meta property="fb:app_id" content="141053657995" />
-        <meta property="fb:admins" content="691777482" />
-        <meta property="fb:page_id" content="7018060973" />
-        <link type="image/jpeg" rel="image_src" href="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/images/opengraph/default.jpg" />
+        
+        
+    <meta charset="utf-16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Hege Refsnes">
+    <link rel="icon" href="icon/ico1.jpg">
+
+    <script src="js/jquery-1.11.3.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <title>Camisetaria Fashion</title>
+
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/> 
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+
+        <meta name="author" content="index.php" />
+        <?php include('navbar.php'); ?>
         <title>
             super |  Camisetas! 
         </title>
@@ -46,7 +57,7 @@
     <main role="main">
         <div class="container catalogo">
 
-            <div class="landing-page">
+<!--            <div class="landing-page">
                 <button type="button" data-toggle="collapse" data-target="#landing">Filtrar</button>
                 <div class="landing-menu collapse" id="landing">
                     <div class="col-xs-12">
@@ -73,7 +84,7 @@
 
                     </div>
                 </div>
-            </div>
+            </div>-->
             <div class="row slc-filtro selectboxitcontainer" style="visibility:hidden">
             </div>
         </div>
@@ -82,15 +93,15 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 shirt">
                     <div class="pic">
                         <a href="product.aspx?pid=2022">
-                            <img class="poster" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/2022_tam11.gif">
-                            <img class="alternate" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/2022_tam12_1.jpg">
+                            <img class="poster" src="img/2022_tam11.gif">
+                            <img class="alternate" src="img/2022_tam12_1.jpg">
                         </a>
                     </div>
                     <div class="author">
                         <span class="name-stamp">
-                            <a href="product.aspx?pid=2022">Coming Home</a>
+                            <a href="#">robert de niro</a>
                         </span>
-                        <span class="name-by">por <a href="profile.aspx?usr=zaakai">ZAKEU SILVA</a>
+                        <span class="name-by">por <a href="#">ZACARIAS</a>
                         </span>
                         <div class="pricing">
                             <span class="regular">a partir de</span>
@@ -101,15 +112,15 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 shirt">
                     <div class="pic">
                         <a href="product.aspx?pid=2023">
-                            <img class="poster" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/2023_tam11.gif">
-                            <img class="alternate" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/2023_tam12_1.jpg">
+                            <img class="poster" src="img/2023_tam11.gif">
+                            <img class="alternate" src="img/2023_tam12_1.jpg">
                         </a>
                     </div>
                     <div class="author">
                         <span class="name-stamp">
-                            <a href="product.aspx?pid=2023">Born to Break Dance</a>
+                            <a href="product.aspx?pid=2023">JOOÃO</a>
                         </span>
-                        <span class="name-by">por <a href="profile.aspx?usr=artcarvalho">Marcos Ferreira de Carvalho</a>
+                        <span class="name-by">por <a href="profile.aspx?usr=artcarvalho">Marcos Carvalho</a>
                         </span>
                         <div class="pricing">
                             <span class="regular">a partir de</span>
@@ -120,8 +131,8 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 shirt">
                     <div class="pic">
                         <a href="product.aspx?pid=2017">
-                            <img class="poster" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/2017_tam11.gif">
-                            <img class="alternate" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/2017_tam12_1.jpg">
+                            <img class="poster" src="img/2017_tam11.gif">
+                            <img class="alternate" src="img/2017_tam12_1.jpg">
                         </a>
                     </div>
                     <div class="author">
@@ -139,8 +150,8 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 shirt">
                     <div class="pic">
                         <a href="product.aspx?pid=1963">
-                            <img class="poster" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1963_tam11.gif">
-                            <img class="alternate" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1963_tam12_1.jpg">
+                            <img class="poster" src="img/1963_tam11.gif">
+                            <img class="alternate" src="img/1963_tam12_1.jpg">
                         </a>
                     </div>
                     <div class="author">
@@ -158,8 +169,8 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 shirt">
                     <div class="pic">
                         <a href="product.aspx?pid=1482">
-                            <img class="poster" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1482_tam11.gif">
-                            <img class="alternate" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1482_tam12_1.jpg">
+                            <img class="poster" src="img/1482_tam11.gif">
+                            <img class="alternate" src="img/1482_tam12_1.jpg">
                         </a>
                     </div>
                     <div class="author">
@@ -177,8 +188,8 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 shirt">
                     <div class="pic">
                         <a href="product.aspx?pid=1234">
-                            <img class="poster" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1234_tam11.gif">
-                            <img class="alternate" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1234_tam12_1.jpg">
+                            <img class="poster" src="img/1234_tam11.gif">
+                            <img class="alternate" src="img/1234_tam12_1.jpg">
                         </a>
                     </div>
                     <div class="author">
@@ -196,8 +207,8 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 shirt">
                     <div class="pic">
                         <a href="product.aspx?pid=1995">
-                            <img class="poster" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1995_tam11.gif">
-                            <img class="alternate" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1995_tam12_1.jpg">
+                            <img class="poster" src="img/1995_tam11.gif">
+                            <img class="alternate" src="img/1995_tam12_1.jpg">
                         </a>
                     </div>
                     <div class="author">
@@ -215,8 +226,8 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 shirt">
                     <div class="pic">
                         <a href="product.aspx?pid=1916">
-                            <img class="poster" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1916_tam11.gif">
-                            <img class="alternate" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1916_tam12_1.jpg">
+                            <img class="poster" src="img/1916_tam11.gif">
+                            <img class="alternate" src="img/1916_tam12_1.jpg">
                         </a>
                     </div>
                     <div class="author">
@@ -234,8 +245,8 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 shirt">
                     <div class="pic">
                         <a href="product.aspx?pid=1957">
-                            <img class="poster" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1957_tam11.gif">
-                            <img class="alternate" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1957_tam12_1.jpg">
+                            <img class="poster" src="img/1957_tam11.gif">
+                            <img class="alternate" src="img/1957_tam12_1.jpg">
                         </a>
                     </div>
                     <div class="author">
@@ -253,8 +264,8 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 shirt">
                     <div class="pic">
                         <a href="product.aspx?pid=1952">
-                            <img class="poster" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1952_tam11.gif">
-                            <img class="alternate" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1952_tam12_1.jpg">
+                            <img class="poster" src="img/1952_tam11.gif">
+                            <img class="alternate" src="img/1952_tam12_1.jpg">
                         </a>
                     </div>
                     <div class="author">
@@ -272,8 +283,8 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 shirt">
                     <div class="pic">
                         <a href="product.aspx?pid=1843">
-                            <img class="poster" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1843_tam11.gif">
-                            <img class="alternate" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1843_tam12_1.jpg">
+                            <img class="poster" src="img/1843_tam11.gif">
+                            <img class="alternate" src="img/1843_tam12_1.jpg">
                         </a>
                     </div>
                     <div class="author">
@@ -291,8 +302,8 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 shirt">
                     <div class="pic">
                         <a href="product.aspx?pid=1942">
-                            <img class="poster" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1942_tam11.gif">
-                            <img class="alternate" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1942_tam12_1.jpg">
+                            <img class="poster" src="img/1942_tam11.gif">
+                            <img class="alternate" src="img/1942_tam12_1.jpg">
                         </a>
                     </div>
                     <div class="author">
@@ -307,11 +318,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+<!--                <div class="col-xs-6 col-sm-6 col-md-3 shirt">
                     <div class="pic">
                         <a href="product.aspx?pid=1932">
-                            <img class="poster" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1932_tam11.gif">
-                            <img class="alternate" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1932_tam12_1.jpg">
+                            <img class="poster" src="img/1932_tam11.gif">
+                            <img class="alternate" src="/img/1932_tam12_1.jpg">
                         </a>
                     </div>
                     <div class="author">
@@ -325,12 +336,12 @@
                             <span class="price">R$ 59,90</span>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                </div>-->
+<!--                <div class="col-xs-6 col-sm-6 col-md-3 shirt">
                     <div class="pic">
                         <a href="product.aspx?pid=1879">
-                            <img class="poster" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1879_tam11.gif">
-                            <img class="alternate" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1879_tam12_1.jpg">
+                            <img class="poster" src="img/1879_tam11.gif">
+                            <img class="alternate" src="img/1879_tam12_1.jpg">
                         </a>
                     </div>
                     <div class="author">
@@ -348,8 +359,8 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 shirt">
                     <div class="pic">
                         <a href="product.aspx?pid=1842">
-                            <img class="poster" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1842_tam11.gif">
-                            <img class="alternate" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1842_tam12_1.jpg">
+                            <img class="poster" src="img/1842_tam11.gif">
+                            <img class="alternate" src="img/1842_tam12_1.jpg">
                         </a>
                     </div>
                     <div class="author">
@@ -367,8 +378,8 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 shirt">
                     <div class="pic">
                         <a href="product.aspx?pid=1873">
-                            <img class="poster" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1873_tam11.gif">
-                            <img class="alternate" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/content/corp/products/camisetas/1873_tam12_1.jpg">
+                            <img class="poster" src="img/1873_tam11.gif">
+                            <img class="alternate" src="img/1873_tam12_1.jpg">
                         </a>
                     </div>
                     <div class="author">
@@ -382,7 +393,7 @@
                             <span class="price">R$ 59,90</span>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
         <div class="row load">
@@ -391,9 +402,9 @@
                         <!--<a href="javascript:void(0)" id="ctl00_Content_ShowMoreLinkButton" class="btn btn-default btn-lg col-md-5 ShowMoreLinkButton">VER MAIS<span class="caret">
             </span>
             </a>-->
-            <a href="#" class="scrollup">
-                <img src="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Content/img/caret2.gif" border="0"/>
-            </a>
+<!--            <a href="#" class="scrollup">
+                <img src="img/caret2.gif" border="0"/>
+            </a>-->
         </div>
     </div>
 </main>
