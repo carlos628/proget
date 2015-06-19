@@ -13,7 +13,7 @@
         <div class="new-users grid12-6">
             <div class="content">
                 <h2>Cadastre-se</h2>
-                <p>Ao criar uma conta em nossa loja, você será capaz de fechar pedidos com mais agilidade, cadastrar diversos endereços, acompanhar seus pedidos, entre outras vantagens.</p>
+                <p>'Ao criar uma conta em nossa loja, voce sera capaz de fechar pedidos com mais agilidade, cadastrar diversos enderecos, acompanhar seus pedidos, entre outras vantagens.</p>
             </div>
             <div class="buttons-set">
                 <button type="button" title="Criar Conta" class="button" onclick="window.location='https://www.gmail.com';"><span><span>Criar Conta</span></span></button>
@@ -22,7 +22,7 @@
         <div class="registered-users grid12-6">
             <div class="content">
                 <h2>Clientes Registrados</h2>
-                <p>Se você já possui uma conta, informe os dados de acesso.</p>
+                <p>Se voce ja possui uma conta, informe os dados de acesso.</p>
                 <ul class="form-list">
                     <li>
                         <label for="email" class="required"><em>*</em>Email</label>
@@ -76,7 +76,7 @@
     });
 //]]>
 </script>
-                <p class="required">*Campos Obrigatórios</p>
+                <p class="required">*Campos Obrigatorios</p>
             </div>
             <div class="buttons-set">
                 <a href="https://www.gmail.com" class="f-left">Esqueceu Sua Senha?</a>
