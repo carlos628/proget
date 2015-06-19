@@ -10,7 +10,7 @@
     <link rel="icon" href="icon/ico1.jpg">
     <script src="js/jquery-1.11.3.js" type="text/javascript"></script>
 
-    <title>camisetaria fashion</title>
+    <title>Camisetaria Fashion</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -25,6 +25,7 @@
 
 <!--INCLUÃO DO ARQUIVO PAGINA-->
 <?php include('navbar.php'); ?>
+
 
 <div class="container">
 

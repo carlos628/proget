@@ -9,7 +9,7 @@
     <link rel="icon" href="icon/ico1.jpg">
     <script src="js/jquery-1.11.3.js" type="text/javascript"></script>
 
-    <title>LINK2</title>
+    <title>camisetaria fashion</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">

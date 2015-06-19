@@ -9,7 +9,7 @@
     <link rel="icon" href="icon/ico1.jpg">
     <script src="js/jquery-1.11.3.js" type="text/javascript"></script>
 
-    <title>LINK1</title>
+    <title>camisetaria fashion</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,12 +20,11 @@
     <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    
 </head>
 
 <!--INCLUÃO DO ARQUIVO PAGINA-->
-<?php include('navbar.php'); ?>
-
-<div class="container">
+<?php include('./navbar.php'); ?>
 
     <div class="row row-offcanvas row-offcanvas-right">
 
@@ -35,8 +34,8 @@
             </p>
             <div class="jumbotron">
                 <h1>LINK1</h1>                           
-            </div>
-            <div class="row">
+            </div><!--
+-->            <div class="row">
 
                 <div class="col-xs-6 col-lg-4">
                     <a href="#" class="thumbnail">
@@ -45,7 +44,7 @@
                     <h2>Heading</h2>
                     <p>Camiseta preta. </p>
                     <p><a class="btn btn-default" href="#" role="button">Ver Detales &raquo;</a></p>
-                </div><!--/.col-xs-6.col-lg-4-->
+                </div>
 
                 <div class="col-xs-6 col-lg-4">
                     <a href="#" class="thumbnail">
@@ -54,8 +53,8 @@
                     <h2>Heading</h2>
                     <p>camisetas malucas </p>
                     <p><a class="btn btn-default" href="#" role="button">Ver Detales &raquo;</a></p>
-                </div><!--/.col-xs-6.col-lg-4-->
-
+                </div> 
+                
                 <div class="col-xs-6 col-lg-4">
                     <a href="#" class="thumbnail">
                         <img src="img/F1.jpg">
@@ -63,7 +62,7 @@
                     <h2>Heading</h2>
                     <p>camiseta masculiddddd </p>
                     <p><a class="btn btn-default" href="#" role="button">Ver Detales &raquo;</a></p>
-                </div><!--/.col-xs-6.col-lg-4-->
+                </div>
 
                 <div class="col-xs-6 col-lg-4">
                     <a href="#" class="thumbnail">
@@ -72,7 +71,7 @@
                     <h2>INFANTIL</h2>
                     <p> lero lero lero </p>
                     <p><a class="btn btn-default" href="INFANTIL.php" role="button">Ver Detales &raquo;</a></p>
-                </div><!--/.col-xs-6.col-lg-4-->
+                </div>
 
                 <div class="col-xs-6 col-lg-4">
                     <a href="#" class="thumbnail">
@@ -81,7 +80,7 @@
                     <h2>MASCULINO</H2>
                     <p>otima camiseta super estilo </p>
                     <p><a class="btn btn-default" href="MASCULINO.php" role="button">Ver Detales &raquo;</a></p>
-                </div><!--/.col-xs-6.col-lg-4-->
+                </div>
 
                 <div class="col-xs-6 col-lg-4">
                     <a href="#" class="thumbnail">
@@ -90,18 +89,18 @@
                     <h2>FEMININO</H2>
                     <p>otima camiseta super estilo </p>
                     <p><a class="btn btn-default" href="FEMININO.php" role="button">Ver Detales &raquo;</a></p>
-                </div><!--/.col-xs-6.col-lg-4-->
+                </div>
 
 
 
-            </div><!--/row-->
-        </div><!--/.col-xs-6.col-sm-9-->
-        <div>
-            <!--INCLUÃO DO ARQUIVO PAGINA-->
-            <?php include ('linkColuna.php'); ?>
+            </div>
         </div>
+        <div>
+<!--            INCLUÃO DO ARQUIVO PAGINA-->
+            <?php include ('linkColuna.php'); ?>
+        </div><!--
 
-    </div><!--/.sidebar-offcanvas_barra lateral-->
+    </div>/.sidebar-offcanvas_barra lateral-->
 </div><!--/row-->
 <!--<a class="left carousel-control" href="#mini-carousel" data-slide="prev">
                                                 <span class="setas seta-esquerda">curuzis</span>
