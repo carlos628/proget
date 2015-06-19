@@ -1,96 +1,114 @@
 <?php $pagina = 'home'; ?>
 <!jonas lindo>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="icon" href="../../favicon.ico">
+<head>
+    <meta charset="utf-16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Hege Refsnes">
+    <link rel="icon" href="icon/ico1.jpg">
+    <script src="js/jquery-1.11.3.js" type="text/javascript"></script>
 
-        <title>camisetaria fashion</title>
+    <title>camisetaria fashion</title>
 
-        <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Custom styles for this template -->
-        <link href="offcanvas.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/> 
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+</head>
 
-    </head>
 
-    <body>
+<!--INCLUÃO DO ARQUIVO PAGINA-->
+<?php include('navbar.php'); ?>
 
-        <?php include('navbar.php'); ?>
+<div class="container">
 
-        <div class="container">
+    <div class="row row-offcanvas row-offcanvas-right">
 
-            <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-15 col-sm-9">
+            <p class="pull-right visible-xs">
+                <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+            </p>
+            <div class="jumbotron">
+                <h1>CAMISETARIA FASHION</h1>                           
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-lg-4">
+                    <img src="img/M1.jpg"
+                         <h2>Heading</h2>
+                    <p>Camiseta preta. </p>
+                    <p><a class="btn btn-default" href="#" role="button">Ver Detales &raquo;</a></p>
+                </div><!--/.col-xs-6.col-lg-4-->
+                <div class="col-xs-6 col-lg-4">
+                    <img src="img/M2.jpg"
+                         <h2>Heading</h2>
+                    <p>camisetas malucas </p>
+                    <p><a class="btn btn-default" href="#" role="button">Ver Detales &raquo;</a></p>
+                </div><!--/.col-xs-6.col-lg-4-->
+                <div class="col-xs-6 col-lg-4">
+                    <img src="img/F1.jpg"
+                         <h2>Heading</h2>
+                    <p>camiseta masculiddddd </p>
+                    <p><a class="btn btn-default" href="#" role="button">Ver Detales &raquo;</a></p>
+                </div><!--/.col-xs-6.col-lg-4-->
+                <div class="col-xs-6 col-lg-4">
+                    <img src="img/F3.jpg"
+                         <h2>INFANTIL</h2>
+                    <p> lero lero lero </p>
+                    <p><a class="btn btn-default" href="INFANTIL.php" role="button">Ver Detales &raquo;</a></p>
+                </div><!--/.col-xs-6.col-lg-4-->
+                <div class="col-xs-6 col-lg-4">
+                    <img src="img/F4.jpg"
+                         <h2>MASCULINO</H2>
+                    <p>otima camiseta super estilo </p>
+                    <p><a class="btn btn-default" href="MASCULINO.php" role="button">Ver Detales &raquo;</a></p>
+                </div><!--/.col-xs-6.col-lg-4-->
+                <div class="col-xs-6 col-lg-4">
+                    <img src="img/I1.jpg"
+                         <h2>FEMININO</h2>
+                    <p>otima camiseta super estilo ffffff </p>
+                    <p><a class="btn btn-default" href="FEMININO.php" role="button">Ver Detales &raquo;</a></p>
 
-                <div class="col-xs-12 col-sm-9">
-                    <p class="pull-right visible-xs">
-                        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
-                    </p>
-                    <div class="jumbotron">
-                        <h1>CAMISETARIA FASHION</h1>
-                        <img src="img/tu.jpg"
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-6 col-lg-4">
-                            <h2>Heading</h2>
-                            <p>Camiseta preta. </p>
-                            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                        </div><!--/.col-xs-6.col-lg-4-->
-                        <div class="col-xs-6 col-lg-4">
-                            <h2>Heading</h2>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                        </div><!--/.col-xs-6.col-lg-4-->
-                        <div class="col-xs-6 col-lg-4">
-                            <h2>Heading</h2>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                        </div><!--/.col-xs-6.col-lg-4-->
-                        <div class="col-xs-6 col-lg-4">
-                            <h2>Heading</h2>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                        </div><!--/.col-xs-6.col-lg-4-->
-                        <div class="col-xs-6 col-lg-4">
-                            <h2>Heading</h2>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                        </div><!--/.col-xs-6.col-lg-4-->
-                        <div class="col-xs-6 col-lg-4">
-                            <h2>Heading</h2>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                        </div><!--/.col-xs-6.col-lg-4-->
-                    </div><!--/row-->
-                </div><!--/.col-xs-12.col-sm-9-->
-                   </div>
-                <?php include('linkColuna.php'); ?>
-                </div><!--/row-->
-        </div><!--/.container-->
-        <hr>
 
-        <footer>
-            <p>&copy; Company 2014</p>
-        </footer>
+                </div><!--/.col-xs-6.col-lg-4-->
+            </div><!--/row-->
+        </div><!--/.col-xs-6.col-sm-9-->
+        <div>
+            <!--INCLUÃO DO ARQUIVO PAGINA-->
+            <?php include ('linkColuna.php'); ?>
+        </div>
 
-    </div>
+    </div><!--/.sidebar-offcanvas_barra lateral-->
+</div><!--/row-->
+
+<hr>
+
+<footer>
+    <p>&copy; Company 2014</p>
+</footer>
+
 </div><!--/.container-->
 
+
 <!-- Bootstrap core JavaScript
+
+Núcleo Bootstrap JavaScript
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
+<!-- Placed at the end of the document so the pages load faster
+Colocado no final do documento para que as páginas carregam mais rápido-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="../../dist/js/bootstrap.min.js"></script>
-
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug
+IE10 corte viewport para Superfície / desktop Windows 8 bug-->
 <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 
 <script src="offcanvas.js"></script>
-</body>
-</html>
+
+
