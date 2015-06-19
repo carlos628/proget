@@ -40,44 +40,63 @@
                 <h1>CAMISETARIA FASHION</h1>                           
             </div>
             <div class="row">
+
                 <div class="col-xs-6 col-lg-4">
-                    <img src="img/M1.jpg"
-                         <h2>Heading</h2>
+                    <a href="#" class="thumbnail">
+                        <img src="img/M1.jpg">
+                    </a>
+                    <h2>Heading</h2>
                     <p>Camiseta preta. </p>
                     <p><a class="btn btn-default" href="#" role="button">Ver Detales &raquo;</a></p>
                 </div><!--/.col-xs-6.col-lg-4-->
+
                 <div class="col-xs-6 col-lg-4">
-                    <img src="img/M2.jpg"
-                         <h2>Heading</h2>
+                    <a href="#" class="thumbnail">
+                        <img src="img/M2.jpg">
+                    </a>
+                    <h2>Heading</h2>
                     <p>camisetas malucas </p>
                     <p><a class="btn btn-default" href="#" role="button">Ver Detales &raquo;</a></p>
                 </div><!--/.col-xs-6.col-lg-4-->
+
                 <div class="col-xs-6 col-lg-4">
-                    <img src="img/F1.jpg"
-                         <h2>Heading</h2>
+                    <a href="#" class="thumbnail">
+                        <img src="img/F1.jpg">
+                    </a>
+                    <h2>Heading</h2>
                     <p>camiseta masculiddddd </p>
                     <p><a class="btn btn-default" href="#" role="button">Ver Detales &raquo;</a></p>
                 </div><!--/.col-xs-6.col-lg-4-->
+
                 <div class="col-xs-6 col-lg-4">
-                    <img src="img/F3.jpg"
-                         <h2>INFANTIL</h2>
+                    <a href="#" class="thumbnail">
+                        <img src="img/F3.jpg">
+                    </a>
+                    <h2>INFANTIL</h2>
                     <p> lero lero lero </p>
                     <p><a class="btn btn-default" href="INFANTIL.php" role="button">Ver Detales &raquo;</a></p>
                 </div><!--/.col-xs-6.col-lg-4-->
+
                 <div class="col-xs-6 col-lg-4">
-                    <img src="img/F4.jpg"
-                         <h2>MASCULINO</H2>
+                    <a href="#" class="thumbnail">
+                        <img src="img/F4.jpg">
+                    </a>
+                    <h2>MASCULINO</H2>
                     <p>otima camiseta super estilo </p>
                     <p><a class="btn btn-default" href="MASCULINO.php" role="button">Ver Detales &raquo;</a></p>
                 </div><!--/.col-xs-6.col-lg-4-->
+
                 <div class="col-xs-6 col-lg-4">
-                    <img src="img/I1.jpg"
-                         <h2>FEMININO</h2>
-                    <p>otima camiseta super estilo ffffff </p>
+                    <a href="#" class="thumbnail">
+                        <img src="img/I1.jpg">
+                    </a>
+                    <h2>FEMININO</h2>
+                    <p>otima camiseta super estilo fff </p>
                     <p><a class="btn btn-default" href="FEMININO.php" role="button">Ver Detales &raquo;</a></p>
-
-
                 </div><!--/.col-xs-6.col-lg-4-->
+                
+					
+					  
             </div><!--/row-->
         </div><!--/.col-xs-6.col-sm-9-->
         <div>
@@ -87,7 +106,10 @@
 
     </div><!--/.sidebar-offcanvas_barra lateral-->
 </div><!--/row-->
-
+<!--<a class="left carousel-control" href="#mini-carousel" data-slide="prev">
+						<span class="setas seta-esquerda">curuzis</span>
+					  </a>-->
+<?php include('./loguin.php'); ?>	
 <hr>
 
 <footer>
