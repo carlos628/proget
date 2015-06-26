@@ -31,7 +31,7 @@
 <meta name="description" content="Camisetas com estampas exclusivas criadas por novos designers e escolhidas por voc&amp;ecirc;." />
 <meta name="author" content="Camiseteria.com" />
 <meta property="og:title" content="Camiseteria.com - Camisetas estampadas" />
-<!--<meta property="og:url" content="http://www.camiseteria.com" />-->
+
 <meta property="og:image" content="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/images/opengraph/default.jpg" />
 <meta property="og:site" content="Camiseteria.com" />
 <meta property="fb:app_id" content="141053657995" />

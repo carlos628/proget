@@ -77,8 +77,8 @@
                 <div class="col-xs-6 col-sm-6 col-md-3 shirt">
                     <div class="pic">
                         <a href="product.aspx?pid=2022">
-                            <img class="poster" src="img/2022_tam11.gif">
-                            <img class="alternate" src="img/2022_tam12_1.jpg">
+                            <img class="poster" src="img/1482_tam12_1.jpg">
+                            <img class="alternate" src="img/1482_tam12_1.jpg">
                         </a>
                     </div>
                     <div class="author">
@@ -133,7 +133,7 @@
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-3 shirt">
                     <div class="pic">
-                        <a href="product.aspx?pid=1963">
+                        <a href="#">
                             <img class="poster" src="img/1963_tam11.gif">
                             <img class="alternate" src="img/1963_tam12_1.jpg">
                         </a>
