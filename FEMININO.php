@@ -31,81 +31,81 @@
                 <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
             </p>
             <div class="jumbotron">
-                <h1>CAMISETARIA FASHION</h1>                           
+                <h1>Moda Feminina</h1>                           
             </div>
             <div class="row">
                 <div class="col-xs-12">
                     <ul class="thumbnails list-inline">
                         <li class="span4">
                             <a href="#" class="thumbnail">
-                                <img src="img/M1.jpg">
+                                <img src="img/feminino/1013_tam11.gif">
                             </a>
-                            <h2>MASCULINO</h2>
-                            <p>Camiseta preta. </p>
-                            <p><a class="btn btn-default" href="MASCULINO.php" role="button">Ver Detales &raquo;</a></p>
+                            <h2>Felk Df</h2>
+                            <p>R$ 10.90 </p>
+                            <p><a class="btn btn-default" href="MASCULINO.php" role="button"> Comprar &raquo;</a></p>
                         </li>
                         <li class="span4">
                             <a href="#" class="thumbnail">
-                                <img src="img/M1.jpg">
+                                <img src="img/feminino/1132_tam11.gif">
                             </a>
-                            <h2>MASCULINO</h2>
-                            <p>Camiseta preta. </p>
-                            <p><a class="btn btn-default" href="MASCULINO.php" role="button">Ver Detales &raquo;</a></p>
+                            <h2>Droul</h2>
+                            <p>R$ 5.90 </p>
+                            <p><a class="btn btn-default" href="MASCULINO.php" role="button">Comprar &raquo;</a></p>
                         </li>
                         <li class="span4">
                             <a href="#" class="thumbnail">
-                                <img src="img/M1.jpg">
+                                <img src="img/feminino/1512_tam11.gif">
                             </a>
-                            <h2>MASCULINO</h2>
-                            <p>Camiseta preta. </p>
-                            <p><a class="btn btn-default" href="MASCULINO.php" role="button">Ver Detales &raquo;</a></p>
+                            <h2>Lk Hopy</h2>
+                            <p>R$ 11.99 </p>
+                            <p><a class="btn btn-default" href="MASCULINO.php" role="button">Comprar &raquo;</a></p>
                         </li>
                         <li class="span4">
                             <a href="#" class="thumbnail">
-                                <img src="img/M1.jpg">
+                                <img src="img/feminino/2021_tam12_10.jpg">
                             </a>
-                            <h2>MASCULINO</h2>
-                            <p>Camiseta preta. </p>
-                            <p><a class="btn btn-default" href="MASCULINO.php" role="button">Ver Detales &raquo;</a></p>
+                            <h2>Sweep </h2>
+                            <p>R$ 21.90 </p>
+                            <p><a class="btn btn-default" href="MASCULINO.php" role="button">Comprar &raquo;</a></p>
                         </li>
                         <li class="span4">
                             <a href="#" class="thumbnail">
-                                <img src="img/M1.jpg">
+                                <img src="img/feminino/2024_tam12_10.jpg">
                             </a>
-                            <h2>MASCULINO</h2>
-                            <p>Camiseta preta. </p>
-                            <p><a class="btn btn-default" href="MASCULINO.php" role="button">Ver Detales &raquo;</a></p>
+                            <h2>Dhift</h2>
+                            <p>R$ 15.90 </p>
+                            <p><a class="btn btn-default" href="MASCULINO.php" role="button">Comprar &raquo;</a></p>
                         </li>
                         <li class="span4">
                             <a href="#" class="thumbnail">
-                                <img src="img/M1.jpg">
+                                <img src="img/feminino/1718_tam12_10.jpg">
                             </a>
-                            <h2>MASCULINO</h2>
-                            <p>Camiseta preta. </p>
-                            <p><a class="btn btn-default" href="MASCULINO.php" role="button">Ver Detales &raquo;</a></p>
+                            <h2>Fly Toog</h2>
+                            <p>R$ 15.00 </p>
+                            <p><a class="btn btn-default" href="MASCULINO.php" role="button">Comprar &raquo;</a></p>
                         </li>
                         <li class="span4">
                             <a href="#" class="thumbnail">
-                                <img src="img/M1.jpg">
+                                <img src="img/feminino/2020_tam12_10.jpg">
                             </a>
-                            <h2>MASCULINO</h2>
-                            <p>Camiseta preta. </p>
-                            <p><a class="btn btn-default" href="MASCULINO.php" role="button">Ver Detales &raquo;</a></p>
+                            <h2>keep Ghop</h2>
+                            <p>R$ 15.00 </p>
+                            <p><a class="btn btn-default" href="MASCULINO.php" role="button">Comprar &raquo;</a></p>
                         </li>
                         <li class="span4">
                             <a href="#" class="thumbnail">
-                                <img src="img/M1.jpg">
+                                <img src="img/feminino/2025_tam12_10.jpg">
                             </a>
-                            <h2>MASCULINO</h2>
-                            <p>Camiseta preta. </p>
-                            <p><a class="btn btn-default" href="MASCULINO.php" role="button">Ver Detales &raquo;</a></p>
+                            <h2>Gup </h2>
+                            <p>R$ 14.90</p>
+                            <p><a class="btn btn-default" href="MASCULINO.php" role="button">Comprar &raquo;</a></p>
                         </li>
                         <li class="span4">
                             <a href="#" class="thumbnail">
-                                <img src="img/M1.jpg">
+                                <img src="img/feminino/1512_tam12_10.jpg">
                             </a>
-                            <h2>MASCULINO</h2>
-                            <p>Camiseta preta. </p>
+                            <h2>Ftoop</h2>
+                            <p>R$ 11.99 </p>
                             <p><a class="btn btn-default" href="MASCULINO.php" role="button">Ver Detales &raquo;</a></p>
                         </li>
                     </ul>

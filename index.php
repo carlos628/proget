@@ -38,75 +38,75 @@
                     <ul class="thumbnails list-inline">
                         <li class="span4">
                             <a href="imagen_home_1.php" class="thumbnail">
-                                <img src="img/M1.jpg">
+                                <img src="img/1482_tam12_1.jpg">
                             </a>
-                            <h2>MASCULINO</h2>
-                            <p>Camiseta preta. </p>
-                            <p><a class="btn btn-default" href="imagen_home_1.php" role="button">Ver Detales &raquo;</a></p>
+                            <h2>Nike Sports</h2>
+                            <p> R$ 9.90 </p>
+                            <p><a class="btn btn-default" href="compra.php" role="button">Comprar &raquo;</a></p>
                         </li>
                         <li class="span4">
                             <a href="imagen_home_2.php" class="thumbnail">
-                                <img src="img/M1.jpg">
+                                <img src="img/1842_tam12_1.jpg">
                             </a>
-                            <h2>MASCULINO</h2>
-                            <p>Camiseta preta. </p>
-                            <p><a class="btn btn-default" href="magen_home_2.php" role="button">Ver Detales &raquo;</a></p>
+                            <h2>Zap Lock</h2>
+                            <p>R$ 16.90 </p>
+                            <p><a class="btn btn-default" href="magen_home_2.php" role="button">Comprar &raquo;</a></p>
                         </li>
                         <li class="span4">
                             <a href="imagen_home_3.php" class="thumbnail">
-                                <img src="img/M1.jpg">
+                                <img src="img/2022_tam12_1.jpg">
                             </a>
-                            <h2>MASCULINO</h2>
-                            <p>Camiseta preta. </p>
-                            <p><a class="btn btn-default" href="imagen_home_3.php" role="button">Ver Detales &raquo;</a></p>
+                            <h2>Olympicos</h2>
+                            <p>R$ 26.90 </p>
+                            <p><a class="btn btn-default" href="imagen_home_3.php" role="button">Comprar &raquo;</a></p>
                         </li>
                         <li class="span4">
                             <a href="imagen_home_4.php" class="thumbnail">
-                                <img src="img/M1.jpg">
+                                <img src="img/feminino/1783_tam12_5.jpg">
                             </a>
-                            <h2>MASCULINO</h2>
-                            <p>Camiseta preta. </p>
-                            <p><a class="btn btn-default" href="imagen_home_4.php" role="button">Ver Detales &raquo;</a></p>
+                            <h2>Slyp Look</h2>
+                            <p>R$ 15.90 </p>
+                            <p><a class="btn btn-default" href="imagen_home_4.php" role="button">Comprar &raquo;</a></p>
                         </li>
                         <li class="span4">
                             <a href="imagen_home_5.php" class="thumbnail">
-                                <img src="img/M1.jpg">
+                                <img src="img/feminino/1817_tam12_10.jpg">
                             </a>
-                            <h2>MASCULINO</h2>
-                            <p>Camiseta preta. </p>
-                            <p><a class="btn btn-default" href="imagen_home_5.php" role="button">Ver Detales &raquo;</a></p>
+                            <h2>Ghop Keep</h2>
+                            <p>18.50 </p>
+                            <p><a class="btn btn-default" href="imagen_home_5.php" role="button">Comprar &raquo;</a></p>
                         </li>
                         <li class="span4">
                             <a href="imagen_home_6.php" class="thumbnail">
-                                <img src="img/M1.jpg">
+                                <img src="img/feminino/2022_tam12_10.jpg">
                             </a>
-                            <h2>MASCULINO</h2>
-                            <p>Camiseta preta. </p>
-                            <p><a class="btn btn-default" href="imagen_home_6.php" role="button">Ver Detales &raquo;</a></p>
+                            <h2>Hot Kell</h2>
+                            <p>R$ 9.90 </p>
+                            <p><a class="btn btn-default" href="imagen_home_6.php" role="button">Comprar &raquo;</a></p>
                         </li>
                         <li class="span4">
                             <a href="imagen_home_7.php" class="thumbnail">
-                                <img src="img/M1.jpg">
+                                <img src="img/infantil/1996_tam12_3.jpg">
                             </a>
-                            <h2>MASCULINO</h2>
-                            <p>Camiseta preta. </p>
-                            <p><a class="btn btn-default" href="imagen_home_7.php" role="button">Ver Detales &raquo;</a></p>
+                            <h2>Baby flok</h2>
+                            <p>R$ 6.90 </p>
+                            <p><a class="btn btn-default" href="imagen_home_7.php" role="button">Comprar &raquo;</a></p>
                         </li>
                         <li class="span4">
                             <a href="imagen_home_8.php" class="thumbnail">
-                                <img src="img/M1.jpg">
+                                <img src="img/infantil/1999_tam12_3.jpg">
                             </a>
-                            <h2>MASCULINO</h2>
-                            <p>Camiseta preta. </p>
-                            <p><a class="btn btn-default" href="imagen_home_8.php" role="button">Ver Detales &raquo;</a></p>
+                            <h2>Chok Nhell</h2>
+                            <p>R$ 10.90 </p>
+                            <p><a class="btn btn-default" href="imagen_home_8.php" role="button">Comprar &raquo;</a></p>
                         </li>
                         <li class="span4">
                             <a href="imagen_home_9.php" class="thumbnail">
-                                <img src="img/M1.jpg">
+                                <img src="img/infantil/1631_tam12_3.jpg">
                             </a>
-                            <h2>MASCULINO</h2>
-                            <p>Camiseta preta. </p>
-                            <p><a class="btn btn-default" href="imagen_home_9.php" role="button">Ver Detales &raquo;</a></p>
+                            <h2>Roop Delf</h2>
+                            <p> R$ 18.50 </p>
+                            <p><a class="btn btn-default" href="imagen_home_9.php" role="button">Comprar &raquo;</a></p>
                         </li>
                     </ul>
                 </div>
