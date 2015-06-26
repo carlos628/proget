@@ -1,0 +1,340 @@
+Bem, vamos primeiro ver tudo o que será passado nesse tutorial:
+- vamos criar uma página de cadastro dos usuários;
+- outra página para o login;
+- gravar o login e senha em um cookie;
+- outra página para recuperação de senha;
+- aplicar a restrição nas páginas;
+
+[U]Cadastro de Usuários[/U]
+
+Primeiramente temos que criar nossa tabela no MySQL com os campos que vamo usar, aqui teremos os campo: Codigo, Nome, Login, Email e Senha, gerando o seguite código:
+
+[QUOTE]
+CREATE TABLE `tbl_membros` (
+`codigo` INT( 5 ) NOT NULL AUTO_INCREMENT,
+`nome` VARCHAR( 75 ) NOT NULL ,
+`login` VARCHAR( 30 ) NOT NULL ,
+`senha` VARCHAR( 30 ) NOT NULL ,
+`email` VARCHAR( 50 ) NOT NULL ,
+PRIMARY KEY ( `codigo` ) 
+);
+[/QUOTE]
+
+Explicando:
+
+CREATE TABLE `tbl_membros` - criamos a tabela com o nome tbl_membros
+Tudo que vem entre os ( ) é os campos;
+Código - INT (somente números) com limite para 5 caracteres, acho que até 99999 usuários está bom né? :P E o NOT NULL para que ela não fique em branco, AUTO_INCREMENT é para ela automaticamente numerar (1,2,3,4,...)
+Nome - VARCHAR (Alpha númerico, letras, números e caracteres especiais) com 75 caracteres no máximo, ...
+
+
+Agora que temos a tabela criada, vamo para a página de cadastro dos usuários. Vamos fazer um formulário com os seguintes campo: Nome, Login, Senha, Repetir Senha e o Email, lembrando que o usuário não digita o campo código, ele é automaticamente inserido no MySQL.
+
+
+cadastrar.php
+[QUOTE]
+<form name="cadastrar" method="post" action="enviar_cadastro.php">
+  <table width="400" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td width="150"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Nome:</font></td>
+      <td width="250"><input name="nome" type="text" id="nome" maxlength="75"></td>
+    </tr>
+    <tr> 
+      <td><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Login:</font></td>
+      <td><input name="login" type="text" id="login" maxlength="30"></td>
+    </tr>
+    <tr> 
+      <td><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Senha:</font></td>
+      <td><input name="senha" type="password" id="senha" maxlength="30"></td>
+    </tr>
+    <tr> 
+      <td><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Repetir 
+        Senha:</font></td>
+      <td><input name="senha2" type="password" id="senha2" maxlength="30"></td>
+    </tr>
+    <tr> 
+      <td><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Email:</font></td>
+      <td><input name="email" type="text" id="email" maxlength="50"></td>
+    </tr>
+    <tr> 
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr> 
+      <td colspan="2"><div align="center"> 
+          <input name="enviar" type="submit" id="enviar" value="Enviar Cadastro">
+          <input name="limpar" type="reset" id="limpar" value="Limpar Dados">
+        </div></td>
+    </tr>
+  </table>
+</form>
+[/QUOTE]
+
+Um simples formulário, nada de códigos, nada de scripts, aqui, muitos programadores gostam de enviar o formulário para a mesma página, e fazer vários IF, eu prefiro enviar o formulário para outra página que irá inserir os dados no MySQL (enviar_cadastro.php). Até essa parte acredito que não tenha nenhuma dúvida no ar, então, vamos para a página que irá introduzir esses usuários no banco de dados.
+
+Mas primeiro, iremos fazer uma página php somente com as configurações do acesso ao banco de dados, pois iremos utiliza-lo várias vezes, e caso erremos em um ponto, teremos que conferir em todas as páginas, essa parte ajudaria como um include de menus :D.
+
+Essa página não precisa ter nenhum código html, ou seja, crie uma página nova e apague todo o código fonte, iremos somente colocar umas váriaveis php nele, aqui segue o código da página:
+
+
+config.php
+[QUOTE]
+<?
+$host		=	"mysql.dominio.com.br"; //endereço do seu servidor MySQL
+$database	=	"wmonline"; //o database que conterá sua tabela, muitas vezes seu próprio login
+$tabela		=	"tbl_membros"; //o nome de sua tabela
+$login_db	=	"wmonline"; //login usado no MySQL
+$senha_db	=	"abc"; //senha usado no MySQL
+?>
+[/QUOTE]
+
+Com essa nossa página de Configurações pronta, salve-a com o nome de config.php e agora vamos para a parte de inserir os usuários:
+
+
+enviar_cadastro.php
+[QUOTE]
+<?
+include "config.php"; //aqui inserimos as váriaveis da página de configuração
+
+$db			=	mysql_connect ($host, $login_db, $senha_db); //conectamos ao mysql
+$basedados	=	mysql_select_db($database); //selecionamos o database escolhido
+
+$pesquisar = mysql_query("SELECT * FROM `$tabela` WHERE login = '$login'", $db); //conferimos se o login escolhido já não foi cadastrado
+$contagem = mysql_num_rows($pesquisar); //traz o resultado da consulta acima
+
+if ( $contagem == 1 ) {
+  $errors .= "Login escolhido já cadastrado.<br>"; //se o login já existir, ele adiciona o erro
+  }
+
+if ( $login == "" ) {
+  $errors .= "Você não digitou um login<br>"; //confere se o campo login não ficou vazio
+  }
+
+if ( $senha == "" ) {
+  $errors .= "Você não digitou uma senha<br>"; //confere se o campo senha não ficou vazio
+  }
+
+if ( $senha != $senha2 ) {
+  $errors .= "Você digitou 2 senhas diferentes.<br>"; //adiciona o erro caso o usuário digitou 2 senhas diferentes
+  }
+  
+if ( $errors == "" ) { //checa se houve ou não erros no cadastro
+
+  $cadastrar = mysql_query("INSERT INTO `$tabela` (nome, login, senha, email)
+    VALUES ('$nome','$login','$senha','$email')", $db); //insere os campos na tabela
+
+    if ( $cadastrar == 1 ) {
+      echo "<div align=center><font size=2 face=Verdana, Arial, Helvetica, sans-serif><br><br><br>Cadastro com sucesso.</font></div>"; //se cadastrou com sucesso o usuário aparece essa mensagem
+      } else {
+	    echo "<div align=center><font size=2 face=Verdana, Arial, Helvetica, sans-serif><br><br><br>Ocorreu um erro no servidor ao tentar se cadastrar.</font></div>"; //caso houver um erro quanto as configurações aparece essa mensagem
+		}
+  } else {
+    echo "<div align=center><font size=2 face=Verdana, Arial, Helvetica, sans-serif>Ocorreu os seguintes erros ao tentar se cadastrar:<br><br>$errors</font></div>"; //mostra os erros do usuário, caso houver
+	}
+?>
+[/QUOTE]
+
+Esse é nosso código para cadastrar os usuários no banco de dados, parece meio complicado ao olhar assim, mas tem comentários ao lado de cada ação, o bom é você tentar entender esse código, não copia-lo e colar no seu, digamos que essa é a base dos sistemas de login.
+
+----------------------------------------------------------------------------
+
+[U]Página de Login[/U]
+
+Vamos fazer da mesma maneira do cadastro, uma página com um formulário simples, que envia para uma página os dados digitados.
+
+login.php
+[QUOTE]
+<form name="login" method="post" action="confirmar_login.php">
+<table width="400" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="150"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Login:</font></td>
+      <td width="250"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+        <input name="login" type="text" id="login">
+        </font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Senha:</font></td>
+      <td><input name="senha" type="password" id="senha"></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+    <td><font size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+  </tr>
+  <tr> 
+    <td><div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+          <input name="entrar" type="submit" id="entrar" value="Entrar">
+          </font></div></td>
+    <td><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="senha.php">Esqueceu 
+      a senha?</a> <a href="cadastrar.php">Cadastre-se</a></font></td>
+  </tr>
+</table>
+</form>
+[/QUOTE]
+
+
+Agora criaremos a página que irá verificar se a senha digitada é correta ou não. Outra coisa, essa página também não deve conter códigos html, pelo fato de ser criados cookies, você deve deletar todo o conteúdo da página antes de fazer esse código
+
+confirmar_login.php
+[QUOTE]
+<?
+include "config.php"; //inclui o arquivo de configurações
+
+$db			=	mysql_connect ($host, $login_db, $senha_db); //conecta ao mysql
+$basedados	=	mysql_select_db($database); //conecta a base de dados
+
+$confirmacao = mysql_query("SELECT * FROM `$tabela` WHERE login = '$login' AND senha = '$senha'", $db); //verifica se o login e a senha conferem
+$contagem = mysql_num_rows($confirmacao); //traz o resultado da pesquisa acima
+
+if ( $contagem == 1 ) {
+  setcookie ("login", $login); //grava o cookie com o login
+  setcookie ("senha", $senha); //grava o cookie com a senha
+  echo "Usuário logado."; //se a senha digitada está correta, mostra a mensagem
+  } else {
+  echo "Login ou senha inválidos. <a href=javascript:history.go(-1)>Clique aqui para voltar.</a>"; //se a senha está incorreta mostra essa mensagem
+  }
+?>
+[/QUOTE]
+
+
+Como o cadastro, poderá parecer meio confusa essa página, mas também aconselho que não copie o código, analise e faça você mesmo, com essas página já teriamos um sistema de login, mas queremos mais, caso nossos usuário não se lembrem da senha, não quero ele me incomodando no icq :P, então faremos uma página para que envie a senha no email cadastrado. E outra vez estaremos fazendo um formulário simples antes, e será enviado para outra página.
+
+senha.php
+[QUOTE]
+<form name="senha" method="post" action="enviar_senha.php">
+  <table width="400" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td width="150"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Login:</font></td>
+      <td width="250"><input name="login" type="text" id="login"></td>
+    </tr>
+    <tr> 
+      <td><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Email:</font></td>
+      <td><input name="email" type="text" id="email"></td>
+    </tr>
+    <tr> 
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr> 
+      <td colspan="2"><div align="center"> 
+          <input name="enviar" type="submit" id="enviar" value="Enviar minha Senha">
+        </div></td>
+    </tr>
+  </table>
+</form>
+[/QUOTE]
+
+
+Agora com os campos Login e Email, podemos conferir no banco de dados e enviar a senha para o email cadastrado:
+
+enviar_senha.php
+[QUOTE]
+<?
+include "config.php"; //inclui o arquivo de configurações
+
+$db			=	mysql_connect ($host, $login_db, $senha_db); //conecta ao mysql
+$basedados	=	mysql_select_db($database); //conecta a base de dados
+
+$confirmacao = mysql_query("SELECT * FROM `$tabela` WHERE login = '$login' AND email = '$email'", $db); //verifica se o login e a email conferem
+  while ($row = mysql_fetch_array($confirmacao)) {
+    $login = $row["login"]; //adiciona a variavel $login o login do usuario
+	$senha = $row["senha"]; //adiciona a variavel $senha a senha do usuario
+    $email = $row["email"]; //adiciona a variavel $email o email do usuario
+	}
+
+$contagem = mysql_num_rows($confirmacao); //traz o resultado da pesquisa acima
+
+if ( $contagem == 1 ) {
+  $msg  = "Recuperação de senha" . chr(13) . chr(10);
+  $msg .= "Senha enviada em " . date("d/m/Y") . ", os dados seguem abaixo: " . chr(13) . chr(10) . chr(10);
+  $msg .= "Login : " . $login . chr(13) . chr(10);
+  $msg .= "Email : " . $email . chr(13) . chr(10);
+  $msg .= "Senha : " . $mensagem . chr(13) . chr(10);
+
+  $Remetente = "endereco@provedor.com.br"; //remetente do email, coloque o email do seu site
+
+  mail($email, "Recuperação de Senha",$msg,"From: $Remetente\n"); //campos do email na ordem, email destinho (não deve ser alterada), assunto, conteudo (não deve ser alterado), remetente (também não altere)
+  
+  echo "<div align=center><font size=2 face=Verdana, Arial, Helvetica, sans-serif>Sua senha foi enviada com sucesso para o email: $email.</font></div>"; //resposta se o email foi enviado com sucesso
+  } else {
+    echo "<div align=center><font size=2 face=Verdana, Arial, Helvetica, sans-serif>Seu login ou email está incorreto.</font></div>"; //resposta se não foi possivel enviar o email
+	}
+?>
+[/QUOTE]
+
+
+Tenho que comentar novamente? Acho que sim né, pra gravar bem :P, é melhor você entender esse script ao invés de copia-lo. Temos pronto nosso sistema já, o que nos resta é? é? é? Restringir o acesso a algumas páginas, bem, vamos fazer uma página com os scripts, e mesmo assim, temos que editar as páginas que queremos que fiquem "trancadas". Também podemos fazer sem edita-las, mas ficaria um sistema bem menos seguro. Vamos agora criar a página com a restrição:
+
+
+acesso.php
+[QUOTE]
+<?
+include "config.php"; //carregamos o arquivo de configuração
+
+$nome = $_COOKIE["login"]; //pegamos o cookie login, gravado anteriormente com o login
+$pass = $_COOKIE["senha"]; //pegamos o cookie senha, gravado anteriormente com o login
+
+$db			=	mysql_connect ($host, $login_db, $senha_db); //conectamos ao mysql
+$basedados	=	mysql_select_db($database); //conectamos ao database
+
+$confirmacao = mysql_query("SELECT * FROM `$tabela` WHERE login = '$nome' AND senha = '$pass'", $db); //verificamos se o conteudo dos cookies esta correto
+$contagem = mysql_num_rows($confirmacao); //resulta da pesquisa acima
+
+//aqui finalizamos assim essa página, a comparação iremos fazer nas páginas com acesso restrito
+?>
+[/QUOTE]
+
+
+Essa página "acesso.php" também não pode conter códigos html, agora iremos ver como colocar essa restrição de acesso nas páginas, veja um exemplo:
+
+
+Temos uma página somente com o texto "OI!" centralizado, esse é o código:
+
+teste.php
+[QUOTE]
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Teste de Acesso</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+
+<div align="center">OI!</div>
+
+</body>
+</html>
+[/QUOTE]
+
+O que temos que fazer é, Adicionar um IF no começo dessa página e um ELSE no final, caso não esteja logado, ficando assim:
+
+teste.php
+[QUOTE]
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Teste de Acesso</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<?
+inl
+if ( $contagem == 1 ) {
+//aqui deixe aberto, pois iremos fechar somente no final da página
+  ?>
+<div align="center">OI!</div>
+<?
+  } else {
+    echo "Você não está logado."; //aqui que terminamos o IF que iniciamos na página
+	}
+  ?>
+</body>
+</html>
+[/QUOTE]
+
+
+
+Bem, creio que acabamos (se não esqueci nenhuma parte :P), espero ter ajudado quem passava por dificuldades com esse tipo de sistema, e que com base nele pode ser aplicado bem mais coisas, como por exemplo, criptografar os cookies de senha, para ter uma melhor segurança para seus usuários (Thanks Stormbringer, ele que me respondeu sobre criptografia).
+
+Beleza galera, quem quiser esses arquivos e mais esse tutorial, tenho em txt, está junto no zip que coloco pra download aqui.

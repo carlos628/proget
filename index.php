@@ -109,7 +109,7 @@
                             <p><a class="btn btn-default" href="imagen_home_9.php" role="button">Ver Detales &raquo;</a></p>
                         </li>
                     </ul>
-                </div>
+                </div><?php include('./login.php'); ?>
 
             </div><!--/wor-->
         </div><!--/.col-xs-6.col-sm-9-->
@@ -123,8 +123,14 @@
 <!--<a class="left carousel-control" href="#mini-carousel" data-slide="prev">
                                                 <span class="setas seta-esquerda">curuzis</span>
                                           </a>-->
-<?php include('./loguin.php'); ?>	
+
+	
 <hr>
+
+
+
+
+
 
 <footer>
     <p>&copy; Company 2014</p>
