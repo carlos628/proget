@@ -13,12 +13,12 @@
     <script src="js/bootstrap.js" type="text/javascript"></script>
     <title>Camisetaria Fashion</title>
 
-    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/> 
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <link href="css/styles.css" rel="stylesheet" type="text/css"/>
 </head>
 
-<!--INCLUÃO DO ARQUIVO PAGINA-->
+
 <?php include('navbar.php'); ?>
 
 
@@ -31,7 +31,7 @@
                 <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
             </p>
             <div class="jumbotron">
-                <h1>CAMISETARIA FASHION</h1>                           
+                <h1>CAMISETARIA FASHION</h1>
             </div>
             <div class="row">
                 <div class="col-xs-12">
@@ -114,17 +114,13 @@
             </div><!--/wor-->
         </div><!--/.col-xs-6.col-sm-9-->
 
-      
-            
 
 
-    </div><!--/.sidebar-offcanvas_barra lateral-->
-</div><!--/row-->
-<!--<a class="left carousel-control" href="#mini-carousel" data-slide="prev">
-                                                <span class="setas seta-esquerda">curuzis</span>
-                                          </a>-->
 
-	
+
+    </div>
+</div>
+
 <hr>
 
 
@@ -133,5 +129,5 @@
 
 
 <footer>
-    <p>&copy; Company 2014</p>
+    <p>camisetaria 2015</p>
 </footer>
