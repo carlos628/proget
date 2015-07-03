@@ -13,7 +13,7 @@
     <script src="js/bootstrap.js" type="text/javascript"></script>
     <title>Camisetaria Fashion</title>
 
-    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/> 
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <link href="css/styles.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -31,7 +31,7 @@
                 <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
             </p>
             <div class="jumbotron">
-                <h1>Moda Infantil</h1>
+                <h1>Moda Infantil</h1>                           
             </div>
             <div class="row">
                 <div class="col-xs-12">
@@ -114,8 +114,8 @@
             </div><!--/wor-->
         </div><!--/.col-xs-6.col-sm-9-->
 
-
-
+      
+            
 
 
     </div><!--/.sidebar-offcanvas_barra lateral-->
@@ -127,5 +127,5 @@
 <hr>
 
 <footer>
-    <p>Camisetaria 2015</p>
+    <p>&copy; Company 2014</p>
 </footer>

@@ -109,15 +109,10 @@
                             <p><a class="btn btn-default" href="imagen_home_9.php" role="button">Comprar &raquo;</a></p>
                         </li>
                     </ul>
-                </div><?php include('./login.php'); ?>
+                </div>
 
             </div><!--/wor-->
         </div><!--/.col-xs-6.col-sm-9-->
-
-
-
-
-
     </div>
 </div>
 

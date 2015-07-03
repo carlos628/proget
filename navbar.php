@@ -15,6 +15,7 @@
                 <li class="<?= ($pagina == 'masculino' ? 'active' : '') ?>"><a href="MASCULINO.php">MASCULINO</a></li>
                 <li class="<?= ($pagina == 'feminino' ? 'active' : '') ?>"><a href="FEMININO.php">FEMININO</a></li>
                 <li class="<?= ($pagina == 'infantil' ? 'active' : '') ?>"><a href="INFANTIL.php">INFANTIL</a></li>
+                <li class="<?= ($pagina == 'logar' ? 'active' : '') ?>"><a href="logar.php">LOGAR</a></li>
             </ul>
         </div><!-- /.nav-collapse -->
     </div><!-- /.container -->

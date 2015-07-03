@@ -1,6 +1,6 @@
 
 
-
+<!--<html class="no-js"> <![endif]-->
 <head id="ctl00_HEAD1">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" Content="IE=edge,chrome=1">
@@ -15,16 +15,27 @@
     <LINK href="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Content/css/hack/dsgecko.css" type="text/css" rel="stylesheet" />
 
 
-    <?php
-    mysql_connect("localhost", "root", "");
-    mysql_select_db("mxmasters");
-    ?>
+
+    <link rel="stylesheet" href="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Content/css/catalogo.css">
+    <script type="text/javascript" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Scripts/bootstrap/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js">
+    </script>
+    <script type="text/javascript" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Scripts/bootstrap/modernizr.min.js">
+    </script>
+    <script type="text/javascript" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/javascript/jslib.js">
+    </script>
+    <link href="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Content/css/jquery.selectBoxIt.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Scripts/select/jquery.selectBoxIt.min.js">
+    </script>
+    <script type="text/javascript" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Scripts/select/jquery.custom.selectBoxIt.js">
+    </script>
 
 
     <meta name="author" content="index.php" />
     <?php include('navbar.php'); ?>
     <title>
-        super |  Camisetas!
+        super |  Camisetas! 
     </title>
 </head>
 <main role="main">
@@ -36,21 +47,54 @@
     <div id="ctl00_Content_itemContent" class="divLoadData container">
         <div class="row shirts row-shirts">
 
-
             <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                <div class="pic">
+                    <center><p>Camiseta Nike sports</p></center>
+                   
+                   
+                    <a href="product.aspx?pid=2023"> 
+                        <img class="poster" src="img/1482_tam12_1.jpg">  
+                        <img class="alternate" src="img/1482_tam12_1.jpg">
+                    </a>
+                </div>
+                <div class="author">
+                    <span class="name-stamp">
+                        <a href="product.aspx?pid=2023"></a>
+                    </span>
+                    <span class="name-by"> <a href="profile.aspx?usr=artcarvalho"></a>
+                    </span>
+                    <div class="pricing">
 
-                <div class="produto" id="">
-                    <img src="img/1482_tam12_1.jpg"/>
-                    <h1>Camiseta Nike Sports </h1>
-                    <p>A nova gera&ccedil;&acirc;o de Camisetas</p>
-                    <h2>R$9,90</h2><button class="btn btn-success">Comprar</button>
+                        <span class="name-by"> <a href="profile.aspx?usr=artcarvalho"></a>
+                        </span>
+                    </div>
                 </div>
 
             </div>
+            <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                <div class="pic">
+                    <p>Nike Sports</p>
+                    <span class="regular"> Nike Sports</span>
+                    <span class="price">R$ 9,90</span>
+                   
+                    </a>
+                </div>
+                <div class="author">
+                    <span class="name-stamp">
+                        <a href="product.aspx?pid=2023"></a>
+                    </span>
+                    <span class="name-by"> <a href="profile.aspx?usr=artcarvalho"></a>
+                    </span>
+                    <div class="pricing">
 
+                        <span class="name-by"> <a href="profile.aspx?usr=artcarvalho"></a>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-</div>
 
 </div>
 </div>
