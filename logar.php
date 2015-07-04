@@ -19,7 +19,7 @@
 </head>
 <div class="container">
 
-
+<title> Login de Usu�rio </title>
     <div class="row row-offcanvas row-offcanvas-right">
 
         <div class="col-xs-20 col-sm-9">
@@ -37,7 +37,7 @@
             <?php
             if (isset($login_cookie)) {
                 echo"Bem-Vindo, $login_cookie <br>";
-                echo"Essas informações <font color='red'>PODEM</font> ser acessadas por você";
+                echo"Essas informacoes <font color='red'>PODEM</font> ser acessadas por voce";
             } else {
                 echo"Bem-Vindo, convidado <br>";
                 echo"Essas informacoes <font color='red'>NAO PODEM</font> ser acessadas por voce";
@@ -47,3 +47,9 @@
         </div>
     </div>
 </div>
+
+<hr>
+<footer>
+
+    <p>&copy; 2015 Company, Inc. &middot; <a href="privacy.php">Privacy</a> &middot; <a href="termo.php">Termo de uso</a></p>
+</footer>

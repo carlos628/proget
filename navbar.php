@@ -20,3 +20,5 @@
         </div><!-- /.nav-collapse -->
     </div><!-- /.container -->
 </nav><!-- /.navbar -->
+<hr>
+<hr>

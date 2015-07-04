@@ -1,7 +1,7 @@
 <?php $pagina = 'masculino'; ?>
 <!jonas lindo>
 <head>
-    <meta charset="utf-16">
+    <meta charset="ISO-8859-1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Free Web tutorials">
@@ -18,7 +18,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css"/>
 </head>
 
-<!--INCLUÃO DO ARQUIVO PAGINA-->
+<!--INCLU?O DO ARQUIVO PAGINA-->
 <?php include('navbar.php'); ?>
 
 
@@ -109,7 +109,7 @@
                             <p><a class="btn btn-default" href="MASCULINO.php" role="button">Comprar &raquo;</a></p>
                         </li>
                     </ul>
-                </div>
+                </div><p class="pull-right"><a href="#">Voltar Inicio</a></p>
 
             </div><!--/wor-->
         </div><!--/.col-xs-6.col-sm-9-->
@@ -127,5 +127,6 @@
 <hr>
 
 <footer>
-    <p>&copy; Company 2014</p>
+
+    <p>&copy; 2015 Company, Inc. &middot; <a href="privacy.php">Privacy</a> &middot; <a href="termo.php">Termo de uso</a></p>
 </footer>

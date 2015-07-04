@@ -12,7 +12,7 @@ if (isset($entrar)) {
         die(OIE);
     } else {
         setcookie("login", $login);
-        header("Location:logar.php");
+        header("Location:index.php");
     }
 }
 ?>
