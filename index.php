@@ -108,30 +108,31 @@
                             <p> R$ 18.50 </p>
                             <p><a class="btn btn-default" href="imagen_home_9.php" role="button">Comprar &raquo;</a></p>
                         </li>
+                        
                     </ul>
-                </div><p class="pull-right"><a href="#">Voltar Inicio</a></p>
+                </div>
 
-            </div><!--/wor-->
+            </div><!--/wor--><div class="col-sm-3">
+                <h2>CONECTE-SE</h2>
+                <li><a href="https://www.facebook.com" target="_blank" class="im">Facebook</a>
+                <li><a href="https://www.pinterest.com" target="_blank" class="pin">Pinterest</a>
+                <li><a href="https://twitter.com" target="_blank" class="twt">Twitter</a>
+                <li><a href="https://plus.google.com" target="_blank" class="gm">Google Plus</a>
+                <li><a href="https://instagram.com" target="_blank" class="ins">Instagram</a>        
+            </div>
         </div><!--/.col-xs-6.col-sm-9-->
     </div>
-    
-    <div class="col-sm-3">
-        <h2>CONECTE-SE</h2>
-            <li><a href="https://www.facebook.com" target="_blank" class="im">Facebook</a>
-            <li><a href="https://www.pinterest.com" target="_blank" class="pin">Pinterest</a>
-            <li><a href="https://twitter.com" target="_blank" class="twt">Twitter</a>
-            <li><a href="https://plus.google.com" target="_blank" class="gm">Google Plus</a>
-            <li><a href="https://instagram.com" target="_blank" class="ins">Instagram</a>        
-    </div>
+
+
 </div>
 
-    
+
 
 <hr>
 
 
 <footer>
-    
 
+    <p class="pull-right"><a href="#">Voltar Inicio</a></p>
     <p>&copy; 2015 Company, Inc. &middot; <a href="privacy.php">Privacy</a> &middot; <a href="termo.php">Termo de uso</a></p>
 </footer>

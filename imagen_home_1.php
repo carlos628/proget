@@ -272,7 +272,7 @@
                     </div>
                 </div>
             </div>
-            <!--                <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                            <div class="col-xs-6 col-sm-6 col-md-3 shirt">
                                 <div class="pic">
                                     <a href="product.aspx?pid=1932">
                                         <img class="poster" src="img/1932_tam11.gif">
@@ -290,8 +290,8 @@
                                         <span class="price">R$ 59,90</span>
                                     </div>
                                 </div>
-                            </div>-->
-            <!--                <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-3 shirt">
                                 <div class="pic">
                                     <a href="product.aspx?pid=1879">
                                         <img class="poster" src="img/1879_tam11.gif">
@@ -347,7 +347,7 @@
                                         <span class="price">R$ 59,90</span>
                                     </div>
                                 </div>
-                            </div>-->
+                            </div>
         </div>
     </div>
     <div class="row load">
