@@ -1,4 +1,5 @@
 <?php $pagina = 'masculino'; ?>
+<?php $login_cookie = $_COOKIE['login']; ?>
 <!jonas lindo>
 <head>
     <meta charset="ISO-8859-1">
@@ -109,13 +110,13 @@
                             <p><a class="btn btn-default" href="MASCULINO.php" role="button">Comprar &raquo;</a></p>
                         </li>
                     </ul>
-                </div><p class="pull-right"><a href="#">Voltar Inicio</a></p>
+                </div>
 
-            </div><!--/wor-->
+            </div><!--/wor--></div><?php include('./linkColuna.php'); ?>
         </div><!--/.col-xs-6.col-sm-9-->
 
-      
-            
+
+
 
 
     </div><!--/.sidebar-offcanvas_barra lateral-->
@@ -127,6 +128,6 @@
 <hr>
 
 <footer>
-
+    <p class="pull-right"><a href="index.php">Voltar Inicio</a></p>
     <p>&copy; 2015 Company, Inc. &middot; <a href="privacy.php">Privacy</a> &middot; <a href="termo.php">Termo de uso</a></p>
 </footer>

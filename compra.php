@@ -1,8 +1,6 @@
-
-
-<!--<html class="no-js"> <![endif]-->
+<?php $login_cookie = $_COOKIE['login']; ?>
 <head id="ctl00_HEAD1">
-    <meta charset="ISO-8859-1">
+<!--    <meta charset="ISO-8859-1">-->
     <meta http-equiv="X-UA-Compatible" Content="IE=edge,chrome=1">
     <meta http-equiv="Keywords" Content="camiseta, camisetas, camiseteria, tshirt, t-shirt, estampa, estampas, design, concurso, designers, arte, silk, camisa, moda, fashion, hype, hypado, hypada, hypadinha, art, camisetas, estampas, competi??o, vote, nota, pr?mio, cor, cores, estilo, moda, original, presente, tee, tees, t-shirts, t shirt, t shirts, roupa, roupas">
     <meta http-equiv="Content-Type" Content="text/html; charset=iso-8859-1">

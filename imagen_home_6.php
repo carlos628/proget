@@ -1,6 +1,4 @@
-
-
-<!--<html class="no-js"> <![endif]-->
+<?php $login_cookie = $_COOKIE['login']; ?>
 <head id="ctl00_HEAD1">
     <meta charset="ISO-8859-1">
     <meta http-equiv="X-UA-Compatible" Content="IE=edge,chrome=1">
@@ -13,7 +11,7 @@
     <link rel="stylesheet" href="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Content/css/bootstrap.min.css">
     <link rel="stylesheet" href="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Content/css/main.css">
     <LINK href="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Content/css/hack/dsgecko.css" type="text/css" rel="stylesheet" />
-
+    <link rel="icon" href="icon/ico1.jpg">
 
 
     <link rel="stylesheet" href="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Content/css/catalogo.css">
@@ -30,7 +28,7 @@
     </script>
     <script type="text/javascript" src="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Scripts/select/jquery.custom.selectBoxIt.js">
     </script>
-
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
 
     <meta name="author" content="index.php" />
     <?php include('navbar.php'); ?>
@@ -39,359 +37,369 @@
     </title>
 </head>
 <main role="main">
+    <!--    <div class="site-wrapper">-->
     <div class="container catalogo">
 
-        <!--            <div class="landing-page">
-                        <button type="button" data-toggle="collapse" data-target="#landing">Filtrar</button>
-                        <div class="landing-menu collapse" id="landing">
-                            <div class="col-xs-12">
-                                <a href="catalog.aspx?g=masculino">
-                                    <span class="landing-title">Masculino</span>
-                                    <img src="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Content/img/catalogo/masculino.jpg">
-                                </a>
+        <div class="site-wrapper">
+
+            <div class="site-wrapper-inner">
+
+                <div class="cover-container">
+
+                    <div class="masthead clearfix">
+                        <div class="inner">
+
+                            <div class="row slc-filtro selectboxitcontainer" style="visibility:hidden">
                             </div>
-                            <div class="col-xs-12">
-                                <a href="catalog.aspx?g=feminino">
-                                    <span class="landing-title">Feminino</span>
-                                    <img src="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Content/img/catalogo/feminino.jpg">
-                                </a>
+
+                            <div id="ctl00_Content_itemContent" class="divLoadData">
+                                <div class="row shirts row-shirts">
+                                    <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                                        <div class="pic">
+                                            <a href="#">
+                                                <img class="poster" src="img/1482_tam12_1.jpg">
+                                                <img class="alternate" src="img/1482_tam12_1.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <span class="name-stamp">
+                                                <a href="#">robert de niro</a>
+                                            </span>
+                                            <span class="name-by">por <a href="#">ZACARIAS</a>
+                                            </span>
+                                            <div class="pricing">
+                                                <span class="regular">a partir de</span>
+                                                <span class="price">R$ 39,90</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                                        <div class="pic">
+                                            <a href="#">
+                                                <img class="poster" src="img/2023_tam11.gif">
+                                                <img class="alternate" src="img/2023_tam12_1.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <span class="name-stamp">
+                                                <a href="#">JOO?O</a>
+                                            </span>
+                                            <span class="name-by">por <a href="#">Marcos Carvalho</a>
+                                            </span>
+                                            <div class="pricing">
+                                                <span class="regular">a partir de</span>
+                                                <span class="price">R$ 59,90</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                                        <div class="pic">
+                                            <a href="#">
+                                                <img class="poster" src="img/2017_tam11.gif">
+                                                <img class="alternate" src="img/2017_tam12_1.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <span class="name-stamp">
+                                                <a href="#">NOs somos feitos de estrelas</a>
+                                            </span>
+                                            <span class="name-by">por <a href="#">Tob? Fonseca</a>
+                                            </span>
+                                            <div class="pricing">
+                                                <span class="regular">a partir de</span>
+                                                <span class="price">R$ 49,90</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                                        <div class="pic">
+                                            <a href="#">
+                                                <img class="poster" src="img/1963_tam11.gif">
+                                                <img class="alternate" src="img/1963_tam12_1.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <span class="name-stamp">
+                                                <a href="#">Furr Division</a>
+                                            </span>
+                                            <span class="name-by">por <a href="#">Tob? Fonseca</a>
+                                            </span>
+                                            <div class="pricing">
+                                                <span class="regular">a partir de</span>
+                                                <span class="price">R$ 49,90</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                                        <div class="pic">
+                                            <a href="#">
+                                                <img class="poster" src="img/1482_tam11.gif">
+                                                <img class="alternate" src="img/1482_tam12_1.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <span class="name-stamp">
+                                                <a href="#">...Lonely People</a>
+                                            </span>
+                                            <span class="name-by">por <a href="#">Fernando Degrossi</a>
+                                            </span>
+                                            <div class="pricing">
+                                                <span class="regular">a partir de</span>
+                                                <span class="price">R$ 59,90</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                                        <div class="pic">
+                                            <a href="#">
+                                                <img class="poster" src="img/1234_tam11.gif">
+                                                <img class="alternate" src="img/1234_tam12_1.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <span class="name-stamp">
+                                                <a href="#">We Love a Fight</a>
+                                            </span>
+                                            <span class="name-by">por <a href="#">MichaelBisparulz</a>
+                                            </span>
+                                            <div class="pricing">
+                                                <span class="regular">a partir de</span>
+                                                <span class="price">R$ 59,90</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                                        <div class="pic">
+                                            <a href="#">
+                                                <img class="poster" src="img/1995_tam11.gif">
+                                                <img class="alternate" src="img/1995_tam12_1.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <span class="name-stamp">
+                                                <a href="#">yummy eggs</a>
+                                            </span>
+                                            <span class="name-by">por <a href="#">MichaelBisparulz</a>
+                                            </span>
+                                            <div class="pricing">
+                                                <span class="regular">a partir de</span>
+                                                <span class="price">R$ 59,90</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                                        <div class="pic">
+                                            <a href="#">
+                                                <img class="poster" src="img/1916_tam11.gif">
+                                                <img class="alternate" src="img/1916_tam12_1.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <span class="name-stamp">
+                                                <a href="#">A Grande Escolha</a>
+                                            </span>
+                                            <span class="name-by">por <a href="#">Lilian</a>
+                                            </span>
+                                            <div class="pricing">
+                                                <span class="regular">a partir de</span>
+                                                <span class="price">R$ 59,90</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                                        <div class="pic">
+                                            <a href="#">
+                                                <img class="poster" src="img/1957_tam11.gif">
+                                                <img class="alternate" src="img/1957_tam12_1.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <span class="name-stamp">
+                                                <a href="#">Toystick</a>
+                                            </span>
+                                            <span class="name-by">por <a href="#">MusgUrbanu</a>
+                                            </span>
+                                            <div class="pricing">
+                                                <span class="regular">a partir de</span>
+                                                <span class="price">R$ 59,90</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                                        <div class="pic">
+                                            <a href="#">
+                                                <img class="poster" src="img/1952_tam11.gif">
+                                                <img class="alternate" src="img/1952_tam12_1.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <span class="name-stamp">
+                                                <a href="#">A Dupla Din?mica!</a>
+                                            </span>
+                                            <span class="name-by">por <a href="#">Renan Sampaio</a>
+                                            </span>
+                                            <div class="pricing">
+                                                <span class="regular">a partir de</span>
+                                                <span class="price">R$ 59,90</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                                        <div class="pic">
+                                            <a href="#">
+                                                <img class="poster" src="img/1843_tam11.gif">
+                                                <img class="alternate" src="img/1843_tam12_1.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <span class="name-stamp">
+                                                <a href="#">Alice no pa?s dos horrores</a>
+                                            </span>
+                                            <span class="name-by">por <a href="#">Eli?de Valverde  </a>
+                                            </span>
+                                            <div class="pricing">
+                                                <span class="regular">a partir de</span>
+                                                <span class="price">R$ 59,90</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                                        <div class="pic">
+                                            <a href="#">
+                                                <img class="poster" src="img/1942_tam11.gif">
+                                                <img class="alternate" src="img/1942_tam12_1.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <span class="name-stamp">
+                                                <a href="#">Acorda...</a>
+                                            </span>
+                                            <span class="name-by">por <a href="#">Douglas Evangelista</a>
+                                            </span>
+                                            <div class="pricing">
+                                                <span class="regular">a partir de</span>
+                                                <span class="price">R$ 59,90</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                                        <div class="pic">
+                                            <a href="product.aspx?pid=1932">
+                                                <img class="poster" src="img/1932_tam11.gif">
+                                                <img class="alternate" src="/img/1932_tam12_1.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <span class="name-stamp">
+                                                <a href="product.aspx?pid=1932">Piratas do Cogumelo</a>
+                                            </span>
+                                            <span class="name-by">por <a href="profile.aspx?usr=douglasstencil">Douglas Evangelista</a>
+                                            </span>
+                                            <div class="pricing">
+                                                <span class="regular">a partir de</span>
+                                                <span class="price">R$ 59,90</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                                        <div class="pic">
+                                            <a href="product.aspx?pid=1879">
+                                                <img class="poster" src="img/1879_tam11.gif">
+                                                <img class="alternate" src="img/1879_tam12_1.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <span class="name-stamp">
+                                                <a href="product.aspx?pid=1879">Serious why so?</a>
+                                            </span>
+                                            <span class="name-by">por <a href="profile.aspx?usr=guideki">Guideki</a>
+                                            </span>
+                                            <div class="pricing">
+                                                <span class="regular">a partir de</span>
+                                                <span class="price">R$ 59,90</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                                        <div class="pic">
+                                            <a href="product.aspx?pid=1842">
+                                                <img class="poster" src="img/1842_tam11.gif">
+                                                <img class="alternate" src="img/1842_tam12_1.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <span class="name-stamp">
+                                                <a href="product.aspx?pid=1842">Who's king of Eternia?</a>
+                                            </span>
+                                            <span class="name-by">por <a href="profile.aspx?usr=sauloalonsospereira">Saulo Alonso de Souza Pereira</a>
+                                            </span>
+                                            <div class="pricing">
+                                                <span class="regular">a partir de</span>
+                                                <span class="price">R$ 59,90</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3 shirt">
+                                        <div class="pic">
+                                            <a href="product.aspx?pid=1873">
+                                                <img class="poster" src="img/1873_tam11.gif">
+                                                <img class="alternate" src="img/1873_tam12_1.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="author">
+                                            <span class="name-stamp">
+                                                <a href="product.aspx?pid=1873">80's</a>
+                                            </span>
+                                            <span class="name-by">por <a href="profile.aspx?usr=vomaria">V? Maria</a>
+                                            </span>
+                                            <div class="pricing">
+                                                <span class="regular">a partir de</span>
+                                                <span class="price">R$ 59,90</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-xs-12">
-                                <a href="catalog.aspx?g=infantil">
-                                    <span class="landing-title">Infantil</span>
-                                    <img src="//assets-camiseteria.s3.amazonaws.com/camiseteria/site/v2/Content/img/catalogo/infantil.jpg">
-                                </a>
-                            </div>
-                            <div class="mini clearfix">
-        
-        
-        
-                            </div>
+                                <div class="row load">
+                                    <span id="noResultLabel">
+                                    </span>
+                                    <a href="imagen_home_7.php" id="ctl00_Content_ShowMoreLinkButton" class="btn btn-default btn-lg col-md-5 ShowMoreLinkButton">VER MAIS<span class="caret">
+                                        </span>
+                                    </a><!--
+                                                <a href="#" ">
+                                                    <img src="img/caret2.gif" border="0"/>
+                                                </a>
+-->                                </div>
                         </div>
-                    </div>-->
-        <div class="row slc-filtro selectboxitcontainer" style="visibility:hidden">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div id="ctl00_Content_itemContent" class="divLoadData">
-        <div class="row shirts row-shirts">
-            <div class="col-xs-6 col-sm-6 col-md-3 shirt">
-                <div class="pic">
-                    <a href="product.aspx?pid=2022">
-                        <img class="poster" src="img/2022_tam11.gif">
-                        <img class="alternate" src="img/2022_tam12_1.jpg">
-                    </a>
-                </div>
-                <div class="author">
-                    <span class="name-stamp">
-                        <a href="#">robert de niro</a>
-                    </span>
-                    <span class="name-by">por <a href="#">ZACARIAS</a>
-                    </span>
-                    <div class="pricing">
-                        <span class="regular">a partir de</span>
-                        <span class="price">R$ 39,90</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 shirt">
-                <div class="pic">
-                    <a href="product.aspx?pid=2023">
-                        <img class="poster" src="img/2023_tam11.gif">
-                        <img class="alternate" src="img/2023_tam12_1.jpg">
-                    </a>
-                </div>
-                <div class="author">
-                    <span class="name-stamp">
-                        <a href="product.aspx?pid=2023">JOO?O</a>
-                    </span>
-                    <span class="name-by">por <a href="profile.aspx?usr=artcarvalho">Marcos Carvalho</a>
-                    </span>
-                    <div class="pricing">
-                        <span class="regular">a partir de</span>
-                        <span class="price">R$ 59,90</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 shirt">
-                <div class="pic">
-                    <a href="product.aspx?pid=2017">
-                        <img class="poster" src="img/2017_tam11.gif">
-                        <img class="alternate" src="img/2017_tam12_1.jpg">
-                    </a>
-                </div>
-                <div class="author">
-                    <span class="name-stamp">
-                        <a href="product.aspx?pid=2017">N?s somos feitos de estrelas</a>
-                    </span>
-                    <span class="name-by">por <a href="profile.aspx?usr=tobiasfonseca">Tob? Fonseca</a>
-                    </span>
-                    <div class="pricing">
-                        <span class="regular">a partir de</span>
-                        <span class="price">R$ 49,90</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 shirt">
-                <div class="pic">
-                    <a href="product.aspx?pid=1963">
-                        <img class="poster" src="img/1963_tam11.gif">
-                        <img class="alternate" src="img/1963_tam12_1.jpg">
-                    </a>
-                </div>
-                <div class="author">
-                    <span class="name-stamp">
-                        <a href="product.aspx?pid=1963">Furr Division</a>
-                    </span>
-                    <span class="name-by">por <a href="profile.aspx?usr=tobiasfonseca">Tob? Fonseca</a>
-                    </span>
-                    <div class="pricing">
-                        <span class="regular">a partir de</span>
-                        <span class="price">R$ 49,90</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 shirt">
-                <div class="pic">
-                    <a href="product.aspx?pid=1482">
-                        <img class="poster" src="img/1482_tam11.gif">
-                        <img class="alternate" src="img/1482_tam12_1.jpg">
-                    </a>
-                </div>
-                <div class="author">
-                    <span class="name-stamp">
-                        <a href="product.aspx?pid=1482">...Lonely People</a>
-                    </span>
-                    <span class="name-by">por <a href="profile.aspx?usr=fdegrossi">Fernando Degrossi</a>
-                    </span>
-                    <div class="pricing">
-                        <span class="regular">a partir de</span>
-                        <span class="price">R$ 59,90</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 shirt">
-                <div class="pic">
-                    <a href="product.aspx?pid=1234">
-                        <img class="poster" src="img/1234_tam11.gif">
-                        <img class="alternate" src="img/1234_tam12_1.jpg">
-                    </a>
-                </div>
-                <div class="author">
-                    <span class="name-stamp">
-                        <a href="product.aspx?pid=1234">We Love a Fight</a>
-                    </span>
-                    <span class="name-by">por <a href="profile.aspx?usr=bisparulz">MichaelBisparulz</a>
-                    </span>
-                    <div class="pricing">
-                        <span class="regular">a partir de</span>
-                        <span class="price">R$ 59,90</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 shirt">
-                <div class="pic">
-                    <a href="product.aspx?pid=1995">
-                        <img class="poster" src="img/1995_tam11.gif">
-                        <img class="alternate" src="img/1995_tam12_1.jpg">
-                    </a>
-                </div>
-                <div class="author">
-                    <span class="name-stamp">
-                        <a href="product.aspx?pid=1995">yummy eggs</a>
-                    </span>
-                    <span class="name-by">por <a href="profile.aspx?usr=bisparulz">MichaelBisparulz</a>
-                    </span>
-                    <div class="pricing">
-                        <span class="regular">a partir de</span>
-                        <span class="price">R$ 59,90</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 shirt">
-                <div class="pic">
-                    <a href="product.aspx?pid=1916">
-                        <img class="poster" src="img/1916_tam11.gif">
-                        <img class="alternate" src="img/1916_tam12_1.jpg">
-                    </a>
-                </div>
-                <div class="author">
-                    <span class="name-stamp">
-                        <a href="product.aspx?pid=1916">A Grande Escolha</a>
-                    </span>
-                    <span class="name-by">por <a href="profile.aspx?usr=lilianlacerda">Lilian</a>
-                    </span>
-                    <div class="pricing">
-                        <span class="regular">a partir de</span>
-                        <span class="price">R$ 59,90</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 shirt">
-                <div class="pic">
-                    <a href="product.aspx?pid=1957">
-                        <img class="poster" src="img/1957_tam11.gif">
-                        <img class="alternate" src="img/1957_tam12_1.jpg">
-                    </a>
-                </div>
-                <div class="author">
-                    <span class="name-stamp">
-                        <a href="product.aspx?pid=1957">Toystick</a>
-                    </span>
-                    <span class="name-by">por <a href="profile.aspx?usr=musgurbanu">MusgUrbanu</a>
-                    </span>
-                    <div class="pricing">
-                        <span class="regular">a partir de</span>
-                        <span class="price">R$ 59,90</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 shirt">
-                <div class="pic">
-                    <a href="product.aspx?pid=1952">
-                        <img class="poster" src="img/1952_tam11.gif">
-                        <img class="alternate" src="img/1952_tam12_1.jpg">
-                    </a>
-                </div>
-                <div class="author">
-                    <span class="name-stamp">
-                        <a href="product.aspx?pid=1952">A Dupla Din?mica!</a>
-                    </span>
-                    <span class="name-by">por <a href="profile.aspx?usr=renansampaio">Renan Sampaio</a>
-                    </span>
-                    <div class="pricing">
-                        <span class="regular">a partir de</span>
-                        <span class="price">R$ 59,90</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 shirt">
-                <div class="pic">
-                    <a href="product.aspx?pid=1843">
-                        <img class="poster" src="img/1843_tam11.gif">
-                        <img class="alternate" src="img/1843_tam12_1.jpg">
-                    </a>
-                </div>
-                <div class="author">
-                    <span class="name-stamp">
-                        <a href="product.aspx?pid=1843">Alice no pa?s dos horrores</a>
-                    </span>
-                    <span class="name-by">por <a href="profile.aspx?usr=eliudevalverde">Eli?de Valverde  </a>
-                    </span>
-                    <div class="pricing">
-                        <span class="regular">a partir de</span>
-                        <span class="price">R$ 59,90</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 shirt">
-                <div class="pic">
-                    <a href="product.aspx?pid=1942">
-                        <img class="poster" src="img/1942_tam11.gif">
-                        <img class="alternate" src="img/1942_tam12_1.jpg">
-                    </a>
-                </div>
-                <div class="author">
-                    <span class="name-stamp">
-                        <a href="product.aspx?pid=1942">Acorda...</a>
-                    </span>
-                    <span class="name-by">por <a href="profile.aspx?usr=douglasstencil">Douglas Evangelista</a>
-                    </span>
-                    <div class="pricing">
-                        <span class="regular">a partir de</span>
-                        <span class="price">R$ 59,90</span>
-                    </div>
-                </div>
-            </div>
-            <!--                <div class="col-xs-6 col-sm-6 col-md-3 shirt">
-                                <div class="pic">
-                                    <a href="product.aspx?pid=1932">
-                                        <img class="poster" src="img/1932_tam11.gif">
-                                        <img class="alternate" src="/img/1932_tam12_1.jpg">
-                                    </a>
-                                </div>
-                                <div class="author">
-                                    <span class="name-stamp">
-                                        <a href="product.aspx?pid=1932">Piratas do Cogumelo</a>
-                                    </span>
-                                    <span class="name-by">por <a href="profile.aspx?usr=douglasstencil">Douglas Evangelista</a>
-                                    </span>
-                                    <div class="pricing">
-                                        <span class="regular">a partir de</span>
-                                        <span class="price">R$ 59,90</span>
-                                    </div>
-                                </div>
-                            </div>-->
-            <!--                <div class="col-xs-6 col-sm-6 col-md-3 shirt">
-                                <div class="pic">
-                                    <a href="product.aspx?pid=1879">
-                                        <img class="poster" src="img/1879_tam11.gif">
-                                        <img class="alternate" src="img/1879_tam12_1.jpg">
-                                    </a>
-                                </div>
-                                <div class="author">
-                                    <span class="name-stamp">
-                                        <a href="product.aspx?pid=1879">Serious why so?</a>
-                                    </span>
-                                    <span class="name-by">por <a href="profile.aspx?usr=guideki">Guideki</a>
-                                    </span>
-                                    <div class="pricing">
-                                        <span class="regular">a partir de</span>
-                                        <span class="price">R$ 59,90</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-3 shirt">
-                                <div class="pic">
-                                    <a href="product.aspx?pid=1842">
-                                        <img class="poster" src="img/1842_tam11.gif">
-                                        <img class="alternate" src="img/1842_tam12_1.jpg">
-                                    </a>
-                                </div>
-                                <div class="author">
-                                    <span class="name-stamp">
-                                        <a href="product.aspx?pid=1842">Who's king of Eternia?</a>
-                                    </span>
-                                    <span class="name-by">por <a href="profile.aspx?usr=sauloalonsospereira">Saulo Alonso de Souza Pereira</a>
-                                    </span>
-                                    <div class="pricing">
-                                        <span class="regular">a partir de</span>
-                                        <span class="price">R$ 59,90</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-3 shirt">
-                                <div class="pic">
-                                    <a href="product.aspx?pid=1873">
-                                        <img class="poster" src="img/1873_tam11.gif">
-                                        <img class="alternate" src="img/1873_tam12_1.jpg">
-                                    </a>
-                                </div>
-                                <div class="author">
-                                    <span class="name-stamp">
-                                        <a href="product.aspx?pid=1873">80's</a>
-                                    </span>
-                                    <span class="name-by">por <a href="profile.aspx?usr=vomaria">V? Maria</a>
-                                    </span>
-                                    <div class="pricing">
-                                        <span class="regular">a partir de</span>
-                                        <span class="price">R$ 59,90</span>
-                                    </div>
-                                </div>
-                            </div>-->
-        </div>
-    </div>
-    <div class="row load">
-        <span id="noResultLabel">
-        </span>
-                    <a href="#" id="ctl00_Content_ShowMoreLinkButton" class="btn btn-default btn-lg col-md-5 ShowMoreLinkButton">VER MAIS<span class="caret">
-        </span>
-        </a>
-        <!--            <a href="#" class="scrollup">
-                        <img src="img/caret2.gif" border="0"/>
-                    </a>-->
-    </div>
-</div>
 </main>
+<nav>
+    <ul class="pagination">
+        <li>
+            <a href="imagen_home_5.php" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li><a href="imagen_home_1.php">1</a></li>
+        <li><a href="imagen_home_2.php">2</a></li>
+        <li><a href="imagen_home_3.php">3</a></li>
+        <li><a href="imagen_home_4.php">4</a></li>
+        <li><a href="imagen_home_5.php">5</a></li>
+        <li class="active" ><a href="imagen_home_6.php">6</a></li>
+        <li><a href="imagen_home_7.php">7</a></li>
+        <li><a href="imagen_home_8.php">8</a></li>
+        <li><a href="imagen_home_9.php">9</a></li>
+        <li>
+            <a href="imagen_home_7.php" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
 <footer>
 
     <p>&copy; 2015 Company, Inc. &middot; <a href="privacy.php">Privacy</a> &middot; <a href="termo.php">Termo de uso</a></p>
