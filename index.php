@@ -1,7 +1,14 @@
-<?php $pagina = 'home'; ?>
-<?php $login_cookie = $_COOKIE['login']; ?>
-<!jonas lindo>
-<html lang="en">
+<?php $pagina = 'home'; ?>,
+
+<?php
+require 'inc/common.php';
+session_start();
+
+//dd($_SESSION);
+?>
+
+<! DOCTYPE html>
+<html  lang =  "en"  >
 
     <head>
         <!--    <meta charset="utf-16">-->
@@ -19,10 +26,14 @@
         <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+
+
+
     </head>
 
 
     <?php include('navbar.php'); ?>
+
 
     <div class="container">
 
@@ -117,12 +128,13 @@
 
                 </div><!--/.col-xs-6.col-sm-9-->
             </div><?php include('./linkColuna.php'); ?>
-
+            <?php include('./header.php'); ?>
+            
 
         </div>
     </div>
 
-    
+
     <hr>
 
 

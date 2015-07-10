@@ -1,4 +1,9 @@
-<?php $login_cookie = $_COOKIE['login']; ?>
+<?php
+require 'inc/common.php';
+session_start();
+
+//dd($_SESSION);
+?>
 <head>
     <meta charset="ISO-8859-1">
     <meta http-equiv="X-UA-Compatible" Content="IE=edge,chrome=1">
@@ -52,7 +57,7 @@
 
                             <div class="row slc-filtro selectboxitcontainer" style="visibility:hidden">
                             </div>
-
+                                    
                             <div id="ctl00_Content_itemContent" class="divLoadData">
                                 <div class="row shirts row-shirts">
                                     <div class="col-xs-6 col-sm-6 col-md-3 shirt">
@@ -358,13 +363,14 @@
                                                 <span class="price">R$ 59,90</span>
                                             </div>
                                         </div>
+                                        <?php include('./header.php'); ?>
                                     </div>
                                 </div>
                             </div>
                             <div class="row load">
                                 <span id="noResultLabel">
                                 </span>
-                                <a href="imagen_home_2.php" id="ctl00_Content_ShowMoreLinkButton" class="btn btn-default btn-lg col-md-5 ShowMoreLinkButton">VER MAIS<span class="caret">
+                                <a href="imagen_home_2.php"  class="btn btn-default btn-lg col-md-5 ">VER MAIS<span class="caret">
                                     </span>
                                 </a>
                                 <!--                                                <a href="#" >

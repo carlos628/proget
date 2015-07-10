@@ -1,4 +1,3 @@
-<?php $login_cookie = $_COOKIE['login']; ?>
 <head>
     <!--    <meta charset="utf-16">-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

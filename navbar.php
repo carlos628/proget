@@ -16,14 +16,9 @@
                     <li class="<?= ($pagina == 'masculino' ? 'active' : '') ?>"><a href="MASCULINO.php">MASCULINO</a>
                     <li class="<?= ($pagina == 'feminino' ? 'active' : '') ?>"><a href="FEMININO.php">FEMININO</a>
                     <li class="<?= ($pagina == 'infantil' ? 'active' : '') ?>"><a href="INFANTIL.php">INFANTIL</a>
-                    <li class="<?= ($pagina == 'logar' ? 'active' : '') ?>"><a href="logar.php">LOGAR</a>
-                    <li class="<?= ($pagina == 'especial' ? 'active' : '') ?>"><a href="especial.php"><?php
-                            if (isset($login_cookie)) {
-                                echo"Bem-Vindo, $login_cookie <br>";
-                            } else {
-                                echo"Bem-Vindo, convidado <br>";
-                            }
-                            ?></a>   
+                    
+                    <li class="<?= ($pagina == 'especial' ? 'active' : '') ?>"><a href="especial.php">especial</a> 
+                    <li class="<?= ($pagina == 'product' ? 'active' : '') ?>"><a href="product.php">produto</a>  
 
                 </ul>
             </div><!-- /.nav-collapse -->

@@ -1,5 +1,10 @@
 <?php $pagina = 'especial'; ?>
-<?php $login_cookie = $_COOKIE['login']; ?>
+<?php
+require 'inc/common.php';
+session_start();
+
+//dd($_SESSION);
+?>
 <head>
     <meta charset="utf-16">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -78,6 +83,6 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-
-
+<?php include('./header.php'); ?>
+           
 

@@ -1,5 +1,10 @@
 <?php $pagina = 'feminino'; ?>
-<?php $login_cookie = $_COOKIE['login']; ?>
+<?php
+require 'inc/common.php';
+session_start();
+
+//dd($_SESSION);
+?>
 <!jonas lindo>
 <head>
     <meta charset="ISO-8859-1">
@@ -114,6 +119,8 @@
 
             </div><!--/wor-->
             </div><?php include('./linkColuna.php'); ?>
+            <?php include('./header.php'); ?>
+            
         </div><!--/.col-xs-6.col-sm-9-->
     </div><!--/.sidebar-offcanvas_barra lateral-->
 </div><!--/row-->
