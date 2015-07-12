@@ -1,15 +1,15 @@
-<form method="POST" action="../product_save.php" enctype="multipart/form-data">
+<form method="POST" action="./product_save.php" enctype="multipart/form-data">
     <div class="form-group">
         <label>Nome</label>
         <input type="name" class="form-control" id="name" name="name" placeholder="Nome">
     </div>
     <div class="form-group">
-        <label>Descri�ao</label>
-        <input type="text" class="form-control" id="description" name="description" placeholder="Descrição">
+        <label>Descricao</label>
+        <input type="text" class="form-control" id="description" name="description" placeholder="Descricao">
     </div>
     <div class="form-group">
-        <label>Preço R$</label>
-        <input type="number" step="any" class="form-control" id="price" name="price" placeholder="Preço">
+        <label>Preco R$</label>
+        <input type="number" step="any" class="form-control" id="price" name="price" placeholder="Preco">
     </div>
     <div class="form-group">
         <label>Imagem</label>

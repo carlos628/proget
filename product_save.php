@@ -1,6 +1,6 @@
 <?php
 
-include('/inc/common.php');
+include('inc/common.php');
 if (!empty($_FILES['image']['name'])) {
     $file_extension = explode('.', $_FILES['image']['name']);
     $file_extension = array_pop($file_extension);
@@ -32,4 +32,4 @@ if (!$sql->execute()) {
     dd($sql->error);
 }
 
-header('location:index.php?p=product-form&success=1');
+header('location:tudo.php?p=product-form&success=1');

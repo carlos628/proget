@@ -1,4 +1,4 @@
-<form method="POST" action="../inc/user_save.php">
+<form method="POST" action="user_save.php">
     <div class="form-group">
         <label>Nome</label>
         <input type="name" class="form-control" id="name" name="name" placeholder="Nome">

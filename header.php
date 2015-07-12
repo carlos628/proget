@@ -1,20 +1,5 @@
 <div class="container">
     <div class="row" style="margin-top: 10px">
-<!--        <div class="col-md-9 column">
-            <div class="row clearfix">
-                <div class="col-md-3 column">
-                    <img alt="140x140" height="140" src="http://lorempixel.com/140/140/">
-                </div>
-                <div class="col-md-9 column">
-                    <div class="page-header">
-                        <h1>
-                            Loja do Café
-                            <small>sabores para todos os gostos</small>
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </div>-->
         <div class="col-md-2 column">
             <?php if (!empty($_SESSION['user']['id'])) { ?>
                 <h4>Bem vindo, <?php echo $_SESSION['user']['name'] ?>!</h4>

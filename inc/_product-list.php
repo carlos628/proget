@@ -11,7 +11,7 @@ if (count($products)) {
 
         <div class="col-md-4">
             <div class="thumbnail">
-                <img alt="" src="./uploads/<?php echo $product['picture']; ?>">
+                <img alt="" src="<?php echo $product['picture']; ?>">
 
                 <div class="caption">
                     <h4>
@@ -29,7 +29,7 @@ if (count($products)) {
 
                     <p>
                         <a class="btn btn-success btn-sm"
-                           href="./index.php?p=product-buy&product-id=<?php echo $product['id']; ?>">Comprar</a>
+                           href="./tudo.php?p=product-buy&product-id=<?php echo $product['id']; ?>">Comprar</a>
                     </p>
                 </div>
             </div>

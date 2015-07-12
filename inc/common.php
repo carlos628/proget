@@ -3,21 +3,21 @@
 function getBodyContent() {
     switch (@$_GET['p']) {
         case 'produtos':
-            include '../inc/_product-list.php';
+            include 'inc/_product-list.php';
             break;
-        case 'sobre':
-
+        case 'especial':
+            include './especial.php';
             break;
         case 'contato':
-
+            include 'inc/contato.php';
             break;
         case 'user-form':
-            include '../inc/_user-form.php';
+            include 'inc/_user-form.php';
             break;
         case 'user-welcome':
             break;
         case 'product-form':
-            include '../inc/_product-form.php';
+            include 'inc/_product-form.php';
             break;
         default:
 //            include 'product.php';

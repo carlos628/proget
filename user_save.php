@@ -1,5 +1,5 @@
 <?php
-include('../inc/common.php');
+include('inc/common.php');
 
 $con = newDbConnection();
 
@@ -15,4 +15,4 @@ if (!$sql->execute()) {
     dd($sql->error);
 }
 
-header('location:index.php?p=user-form&success=1');
+header('location:tudo.php?p=user-form&success=1');

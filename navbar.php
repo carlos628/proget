@@ -17,9 +17,15 @@
                     <li class="<?= ($pagina == 'feminino' ? 'active' : '') ?>"><a href="FEMININO.php">FEMININO</a>
                     <li class="<?= ($pagina == 'infantil' ? 'active' : '') ?>"><a href="INFANTIL.php">INFANTIL</a>
                     
-                    <li class="<?= ($pagina == 'especial' ? 'active' : '') ?>"><a href="especial.php">especial</a> 
-                    <li class="<?= ($pagina == 'product' ? 'active' : '') ?>"><a href="product.php">produto</a>  
 
+                    <li class="<?php echo $_GET['p'] == 'produtos' ? 'active' : '' ?>"><a href="./tudo.php?p=produtos">Produtos</a>
+                    <li class="<?php echo $_GET['p'] == 'contato' ? 'active' : '' ?>"><a href="./tudo.php?p=contato">Contato</a>
+
+                        <?php if (!empty($_SESSION['user']['id'])) { ?>
+                        <li class="<?php echo $_GET['p'] == 'user-form' ? 'active' : '' ?>"><a href="./tudo.php?p=user-form">Gerenciar Usuarios</a>
+                        <li class="<?php echo $_GET['p'] == 'product-form' ? 'active' : '' ?>"><a href="./tudo.php?p=product-form">Gerenciar Produtos</a>
+                        <li class="<?php echo $_GET['p'] == 'especial' ? 'active' : '' ?>"><a href="./especial.php?p=especial">especial</a> 
+                        <?php } ?>
                 </ul>
             </div><!-- /.nav-collapse -->
         </div><!-- /.container -->
