@@ -3,16 +3,17 @@ include('inc/common.php');
 
 $con = newDbConnection();
 
-$sql = $con->prepare('INSERT INTO user (name, email, password, active) VALUES (?,?,?,?)');
+$sql = $con->prepare('INSERT INTO user (name, email, contact, password, active) VALUES (?,?,?,?,?)');
 
 $name = $_POST['name'];
 $email = $_POST['email'];
+$contact = $_POST['contact'];
 $password = sha1($_POST['password']);
 $active = 1;
-$sql->bind_param('sssi', $name, $email, $password, $active);
+$sql->bind_param('ssssi', $name, $email, $contact, $password, $active);
 
 if (!$sql->execute()) {
     dd($sql->error);
 }
 
-header('location:tudo.php?p=user-form&success=1');
+header('location:index.php');

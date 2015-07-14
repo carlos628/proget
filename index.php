@@ -116,8 +116,8 @@ session_start(); //dd($_SESSION);
                         </div>
                     </div><!--/.col-xs-6.col-sm-9-->
                 </div>
-                <?php include('./linkColuna.php'); ?>
-                <?php include('./header.php'); ?>
+                <?php include('linkColuna.php'); ?>
+                <?php include('header.php'); ?>
             </div>
         </div>
         <hr>

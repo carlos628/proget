@@ -1,8 +1,7 @@
-<?php $pagina = 'especial'; ?>
 <?php
+$pagina = 'especial';
 require 'inc/common.php';
 session_start();
-
 //dd($_SESSION);
 ?>
 <head>
@@ -21,7 +20,10 @@ session_start();
     <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <link href="css/styles.css" rel="stylesheet" type="text/css"/>
-    <?php include('navbar.php'); ?>
+    <?php
+    include('navbar.php');
+    include('header.php');
+    ?>
 </head>
 
 
@@ -31,46 +33,63 @@ session_start();
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="img/feminino/1132_tam12_10.jpg" alt="...">
+            <img src="img/F18.jpg" alt="0">
             <div class="carousel-caption">
-                <h1>mega jonas brother</h1>
-                <p>opa,opa</p>
+                <h1>FEMININO</h1>
+                <p>muito fashiom</p>
             </div>
         </div>
         <div class="item">
-            <img src="img/feminino/1013_tam12_10.jpg" alt="...">
+            <img src="img/02.jpg" alt="1">
             <div class="carousel-caption">
-                <h1>mega ator</h1>
-                <p>opa,opa</p>
+                <h1>FEMININO</h1>
+                <p>muito fashiom</p>
             </div>
         </div>
         <div class="item">
-            <img src="img/masculino/1013_tam11.gif" alt="...">
+            <img src="img/03.jpg" alt="2">
             <div class="carousel-caption">
-                <h1>mega jonas maluco</h1>
-                <p>opa,opa</p>
+                <h1>FEMININO</h1>
+                <p>muito fashiom</p>
             </div>
         </div>
         <div class="item">
-            <img src="img/masculino/1013_tam11.gif" alt="...">
+            <img src="img/05.jpg" alt="3">
             <div class="carousel-caption">
-                <h1>jonar ator</h1>
-                <p>opa,opa</p>
+                <h1>MASCULINO</h1>
+                <p>MASCULO</p>
             </div>
         </div>
         <div class="item">
-            <img src="img/masculino/1013_tam11.gif" alt="...">
+            <img src="img/masculino/1632_tam12_1.jpg" alt="4">
             <div class="carousel-caption">
-                <h1>super jonas grafico</h1>
-                <p>opa,opa</p>
+                <h1>MEGA MASCULINO</h1>
+                <p>SUPER CAMISETA</p>
             </div>
         </div>
-        ...
+        <div class="item">
+            <img src="img/infantil/1465_tam12_3.jpg" alt="5">
+            <div class="carousel-caption">
+                <h1>INFANTIL</h1>
+                <p>SUPER DELICADO</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/infantil/1474_tam12_3.jpg" alt="6">
+            <div class="carousel-caption">
+                <h1>INFANTIL</h1>
+                <p>LEGAL</p>
+            </div>
+        </div>
     </div>
 
     <!-- Controls -->
@@ -83,6 +102,3 @@ session_start();
         <span class="sr-only">Next</span>
     </a>
 </div>
-<?php include('./header.php'); ?>
-           
-

@@ -1,6 +1,8 @@
 CREATE TABLE `user` (
   `id`       INTEGER(11)  NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(150) NOT NULL,
   `email`    VARCHAR(100) NOT NULL UNIQUE,
+  `contact`    VARCHAR(12) NOT NULL,
   `password` VARCHAR(40)  NOT NULL,
   `active`   BOOLEAN      NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
@@ -17,10 +19,8 @@ CREATE TABLE `user` (
   ROW_FORMAT = DEFAULT
   KEY_BLOCK_SIZE = 0;
 
-ALTER TABLE `user` ADD COLUMN `name` VARCHAR(150) NOT NULL;
 
-
-
+-- ALTER TABLE `user` ADD COLUMN `name` VARCHAR(150) NOT NULL;
 
 -- INSERT INTO `user` (`email`, `password`, `active`, `name`) VALUES
 --   ('pedrohc@gmail.com', '1fc854110e5532480000542834f453de31936c2f', 1, 'Pedro');

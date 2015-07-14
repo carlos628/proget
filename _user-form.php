@@ -8,6 +8,10 @@
         <input type="email" class="form-control" id="email" name="email" placeholder="Email">
     </div>
     <div class="form-group">
+        <label>Contato</label>
+        <input type="contact" class="form-control" id="contact" name="contact" placeholder="Contato">
+    </div>
+    <div class="form-group">
         <label>Senha</label>
         <input type="password" class="form-control" id="password" name="password" placeholder="Senha">
     </div>

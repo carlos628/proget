@@ -4,7 +4,7 @@ CREATE TABLE `product` (
   `description` TEXT,
   `price`       FLOAT(9, 3)           DEFAULT NULL,
   `fk_origin`   INTEGER(11)           DEFAULT NULL,
-  `picture`     BLOB         NOT NULL,
+  `picture`     VARCHAR(100)         NOT NULL,
   `stock`       INTEGER(11)  NOT NULL,
   PRIMARY KEY (`id`)
     COMMENT ''
