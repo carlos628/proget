@@ -23,4 +23,4 @@ CREATE TABLE `user` (
 -- ALTER TABLE `user` ADD COLUMN `name` VARCHAR(150) NOT NULL;
 
 -- INSERT INTO `user` (`email`, `password`, `active`, `name`) VALUES
---   ('pedrohc@gmail.com', '1fc854110e5532480000542834f453de31936c2f', 1, 'Pedro');
+--   ('fulano@gmail.com', '1fc854110e5532480000542834f453de31936c2f', 1, 'fulano');
